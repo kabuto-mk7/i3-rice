@@ -1,0 +1,1300 @@
+[2023-01-13 12:56:53.836] [72413] (engine.cpp:239): Time: Fri Jan 13 12:56:53 2023 GMT logLevel:2
+[2023-01-13 12:56:53.837] [72413] (audio_processing_impl.cc:274): Injected APM submodules:
+Echo control factory: 0
+Echo detector: 0
+Capture analyzer: 0
+Capture post processor: 0
+Render pre processor: 0
+[2023-01-13 12:56:53.837] [72413] (audio_processing_impl.cc:531): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 }, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 0, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 0, level: Moderate }, transient_suppression: { enabled: 0 }, voice_detection: { enabled: 0 }, gain_controller1: { enabled: 0, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_level_minimum: 0, analog_level_maximum: 255 }, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, level_estimator: { vad_probability_attack: 1, type: Rms, adjacent_speech_frames_threshold: 1, initial_saturation_margin_db: 20, extra_saturation_margin_db: 2 }, gain_applier: { adjacent_speech_frames_threshold: 1, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50 }}}, residual_echo_detector: { enabled: 1 }, level_estimation: { enabled: 0 }}
+[2023-01-13 12:56:53.837] [72413] (audio_device_impl.cc:83): Create
+[2023-01-13 12:56:53.837] [72413] (audio_device_impl.cc:91): CreateForTest
+[2023-01-13 12:56:53.837] [72413] (audio_device_buffer.cc:64): AudioDeviceBuffer::ctor
+[2023-01-13 12:56:53.837] [72413] (audio_device_impl.cc:129): AudioDeviceModuleImpl
+[2023-01-13 12:56:53.837] [72413] (audio_device_impl.cc:133): CheckPlatform
+[2023-01-13 12:56:53.837] [72413] (audio_device_impl.cc:144): current platform is Linux
+[2023-01-13 12:56:53.837] [72413] (audio_device_impl.cc:163): CreatePlatformSpecificObjects
+[2023-01-13 12:56:53.837] [72413] (audio_device_impl.cc:992): PlatformAudioLayer
+[2023-01-13 12:56:53.837] [72413] (audio_device_impl.cc:299): PulseAudio support is enabled.
+[2023-01-13 12:56:53.837] [72413] (audio_mixer_manager_pulse_linux.cc:57): AudioMixerManagerLinuxPulse created
+[2023-01-13 12:56:53.837] [72413] (audio_device_pulse_linux.cc:81): AudioDeviceLinuxPulse created
+[2023-01-13 12:56:53.837] [72413] (audio_device_impl.cc:304): Linux PulseAudio APIs will be utilized
+[2023-01-13 12:56:53.837] [72413] (audio_device_impl.cc:345): AttachAudioBuffer
+[2023-01-13 12:56:53.837] [72413] (audio_device_buffer.cc:180): SetRecordingSampleRate(0)
+[2023-01-13 12:56:53.837] [72413] (audio_device_buffer.cc:186): SetPlayoutSampleRate(0)
+[2023-01-13 12:56:53.837] [72413] (audio_device_buffer.cc:200): SetRecordingChannels(0)
+[2023-01-13 12:56:53.837] [72413] (audio_device_buffer.cc:206): SetPlayoutChannels(0)
+[2023-01-13 12:56:53.837] [72413] (audio_device_impl.cc:355): ActiveAudioLayer
+[2023-01-13 12:56:53.837] [72413] (audio_processing_impl.cc:274): Injected APM submodules:
+Echo control factory: 0
+Echo detector: 0
+Capture analyzer: 0
+Capture post processor: 0
+Render pre processor: 0
+[2023-01-13 12:56:53.837] [72413] (audio_engine.cpp:462): Creating audio engine: standard
+[2023-01-13 12:56:53.837] [72413] (audio_device_impl.cc:365): Init
+[2023-01-13 12:56:53.838] [72413] (audio_coding.cpp:147): Using software Opus decoder
+[2023-01-13 12:56:53.838] [72413] (audio_coding.cpp:164): Using software Opus encoder
+[2023-01-13 12:56:53.838] [72413] (audio_device_impl.cc:896): RegisterAudioCallback
+[2023-01-13 12:56:53.838] [72413] (audio_device_buffer.cc:81): RegisterAudioCallback
+[2023-01-13 12:56:53.838] [72413] (audio_engine.cpp:187): Setting audio input device: 'default'
+[2023-01-13 12:56:53.838] [72413] (audio_device_impl.cc:579): SetStereoRecording(1)
+[2023-01-13 12:56:53.838] [72413] (audio_device_buffer.cc:200): SetRecordingChannels(2)
+[2023-01-13 12:56:53.838] [72413] (audio_device_impl.cc:777): SetRecordingDevice(0)
+[2023-01-13 12:56:53.838] [72413] (audio_device_impl.cc:567): StereoRecordingIsAvailable
+[2023-01-13 12:56:53.838] [72413] (audio_mixer_manager_pulse_linux.cc:196): MicrophoneIsInitialized
+[2023-01-13 12:56:53.838] [72413] (audio_device_impl.cc:574): output: 1
+[2023-01-13 12:56:53.838] [72413] (audio_device_impl.cc:579): SetStereoRecording(1)
+[2023-01-13 12:56:53.838] [72413] (audio_device_buffer.cc:200): SetRecordingChannels(2)
+[2023-01-13 12:56:53.838] [72413] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2023-01-13 12:56:53.838] [72413] (audio_device_impl.cc:548): SetMicrophoneVolume(255)
+[2023-01-13 12:56:53.838] [72413] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2023-01-13 12:56:53.838] [72413] (audio_engine.cpp:199): Setting audio output device: 'default'
+[2023-01-13 12:56:53.838] [72413] (audio_device_impl.cc:709): SetPlayoutDevice(0)
+[2023-01-13 12:56:53.838] [72413] (audio_device_impl.cc:613): StereoPlayoutIsAvailable
+[2023-01-13 12:56:53.838] [72413] (audio_mixer_manager_pulse_linux.cc:189): SpeakerIsInitialized
+[2023-01-13 12:56:53.838] [72413] (audio_device_impl.cc:620): output: 1
+[2023-01-13 12:56:53.838] [72413] (audio_device_impl.cc:625): SetStereoPlayout(1)
+[2023-01-13 12:56:53.838] [72413] (audio_device_buffer.cc:206): SetPlayoutChannels(2)
+[2023-01-13 12:56:53.838] [72413] (audio_device_impl.cc:912): BuiltInAECIsAvailable
+[2023-01-13 12:56:53.838] [72413] (audio_device_generic.cc:32): BuiltInAECIsAvailable: Not supported on this platform
+[2023-01-13 12:56:53.838] [72413] (audio_device_impl.cc:915): output: 0
+[2023-01-13 12:56:53.838] [72413] (audio_processing_impl.cc:531): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 }, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 0, level: Moderate }, transient_suppression: { enabled: 0 }, voice_detection: { enabled: 0 }, gain_controller1: { enabled: 0, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_level_minimum: 0, analog_level_maximum: 255 }, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, level_estimator: { vad_probability_attack: 1, type: Rms, adjacent_speech_frames_threshold: 1, initial_saturation_margin_db: 20, extra_saturation_margin_db: 2 }, gain_applier: { adjacent_speech_frames_threshold: 1, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50 }}}, residual_echo_detector: { enabled: 1 }, level_estimation: { enabled: 0 }}
+[2023-01-13 12:56:53.838] [72413] (audio_processing_impl.cc:531): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 }, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 0, level: Moderate }, transient_suppression: { enabled: 0 }, voice_detection: { enabled: 0 }, gain_controller1: { enabled: 1, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_level_minimum: 0, analog_level_maximum: 255 }, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, level_estimator: { vad_probability_attack: 1, type: Rms, adjacent_speech_frames_threshold: 1, initial_saturation_margin_db: 20, extra_saturation_margin_db: 2 }, gain_applier: { adjacent_speech_frames_threshold: 1, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50 }}}, residual_echo_detector: { enabled: 1 }, level_estimation: { enabled: 0 }}
+[2023-01-13 12:56:53.838] [72413] (agc_manager_direct.cc:69): [agc] GetMinMicLevel
+[2023-01-13 12:56:53.838] [72413] (agc_manager_direct.cc:73): [agc] Using default min mic level: 12
+[2023-01-13 12:56:53.838] [72413] (captured_audio_processor.cpp:119): SetNoiseCancellation: 0
+[2023-01-13 12:56:53.838] [72413] (audio_processing_impl.cc:531): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 }, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 1, level: High }, transient_suppression: { enabled: 0 }, voice_detection: { enabled: 0 }, gain_controller1: { enabled: 1, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_level_minimum: 0, analog_level_maximum: 255 }, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, level_estimator: { vad_probability_attack: 1, type: Rms, adjacent_speech_frames_threshold: 1, initial_saturation_margin_db: 20, extra_saturation_margin_db: 2 }, gain_applier: { adjacent_speech_frames_threshold: 1, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50 }}}, residual_echo_detector: { enabled: 1 }, level_estimation: { enabled: 0 }}
+[2023-01-13 12:56:53.880] [72359] (discord.cpp:543): JS console: ["Unsupported Locale","en-GB"]
+[2023-01-13 12:56:53.880] [72359] (discord.cpp:543): JS console: ["Unsupported Locale","en"]
+[2023-01-13 12:56:53.882] [72413] (audio_engine.cpp:187): Setting audio input device: 'default'
+[2023-01-13 12:56:53.882] [72413] (audio_device_impl.cc:827): RecordingIsInitialized
+[2023-01-13 12:56:53.882] [72413] (audio_device_impl.cc:579): SetStereoRecording(1)
+[2023-01-13 12:56:53.882] [72413] (audio_device_buffer.cc:200): SetRecordingChannels(2)
+[2023-01-13 12:56:53.882] [72413] (audio_device_impl.cc:777): SetRecordingDevice(0)
+[2023-01-13 12:56:53.882] [72413] (audio_device_impl.cc:567): StereoRecordingIsAvailable
+[2023-01-13 12:56:53.882] [72413] (audio_mixer_manager_pulse_linux.cc:196): MicrophoneIsInitialized
+[2023-01-13 12:56:53.882] [72413] (audio_device_impl.cc:574): output: 1
+[2023-01-13 12:56:53.882] [72413] (audio_device_impl.cc:579): SetStereoRecording(1)
+[2023-01-13 12:56:53.882] [72413] (audio_device_buffer.cc:200): SetRecordingChannels(2)
+[2023-01-13 12:56:53.882] [72413] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2023-01-13 12:56:53.882] [72413] (audio_device_impl.cc:548): SetMicrophoneVolume(255)
+[2023-01-13 12:56:53.882] [72413] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2023-01-13 12:56:53.882] [72413] (audio_engine.cpp:199): Setting audio output device: 'default'
+[2023-01-13 12:56:53.882] [72413] (audio_device_impl.cc:821): PlayoutIsInitialized
+[2023-01-13 12:56:53.882] [72413] (audio_device_impl.cc:709): SetPlayoutDevice(0)
+[2023-01-13 12:56:53.882] [72413] (audio_device_impl.cc:613): StereoPlayoutIsAvailable
+[2023-01-13 12:56:53.882] [72413] (audio_mixer_manager_pulse_linux.cc:189): SpeakerIsInitialized
+[2023-01-13 12:56:53.882] [72413] (audio_device_impl.cc:620): output: 1
+[2023-01-13 12:56:53.882] [72413] (audio_device_impl.cc:625): SetStereoPlayout(1)
+[2023-01-13 12:56:53.882] [72413] (audio_device_buffer.cc:206): SetPlayoutChannels(2)
+[2023-01-13 12:56:53.882] [72413] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2023-01-13 12:56:53.882] [72413] (audio_device_impl.cc:548): SetMicrophoneVolume(255)
+[2023-01-13 12:56:53.882] [72413] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2023-01-13 12:56:53.883] [72359] (discord.cpp:543): JS console: ["%c[default]","[BUILD INFO] Release Channel: stable, Build Number: 167523, Version Hash: cbd51822458985fdf6d3168482e939ac81d0e673"]
+[2023-01-13 12:56:53.893] [72359] (discord.cpp:543): JS console: ["%c[default]","[NATIVE INFO] host 0.0.23, modules: discord_desktop_core: 1, discord_erlpack: 1, discord_spellcheck: 1, discord_utils: 1, discord_voice: 1, build: null"]
+[2023-01-13 12:56:53.969] [72413] (audio_engine.cpp:187): Setting audio input device: 'default'
+[2023-01-13 12:56:53.969] [72413] (audio_device_impl.cc:827): RecordingIsInitialized
+[2023-01-13 12:56:53.969] [72413] (audio_device_impl.cc:579): SetStereoRecording(1)
+[2023-01-13 12:56:53.969] [72413] (audio_device_buffer.cc:200): SetRecordingChannels(2)
+[2023-01-13 12:56:53.969] [72413] (audio_device_impl.cc:777): SetRecordingDevice(0)
+[2023-01-13 12:56:53.969] [72413] (audio_device_impl.cc:567): StereoRecordingIsAvailable
+[2023-01-13 12:56:53.969] [72413] (audio_mixer_manager_pulse_linux.cc:196): MicrophoneIsInitialized
+[2023-01-13 12:56:53.969] [72413] (audio_device_impl.cc:574): output: 1
+[2023-01-13 12:56:53.969] [72413] (audio_device_impl.cc:579): SetStereoRecording(1)
+[2023-01-13 12:56:53.969] [72413] (audio_device_buffer.cc:200): SetRecordingChannels(2)
+[2023-01-13 12:56:53.969] [72413] (audio_mixer_manager_pulse_linux.cc:669): input device index has not been set
+[2023-01-13 12:56:53.969] [72413] (audio_device_impl.cc:548): SetMicrophoneVolume(255)
+[2023-01-13 12:56:53.969] [72413] (audio_mixer_manager_pulse_linux.cc:575): input device index has not been set
+[2023-01-13 12:56:53.969] [72413] (audio_engine.cpp:199): Setting audio output device: 'default'
+[2023-01-13 12:56:53.969] [72413] (audio_device_impl.cc:821): PlayoutIsInitialized
+[2023-01-13 12:56:53.969] [72413] (audio_device_impl.cc:709): SetPlayoutDevice(0)
+[2023-01-13 12:56:53.969] [72413] (audio_device_impl.cc:613): StereoPlayoutIsAvailable
+[2023-01-13 12:56:53.969] [72413] (audio_mixer_manager_pulse_linux.cc:189): SpeakerIsInitialized
+[2023-01-13 12:56:53.970] [72413] (audio_device_impl.cc:620): output: 1
+[2023-01-13 12:56:53.970] [72413] (audio_device_impl.cc:625): SetStereoPlayout(1)
+[2023-01-13 12:56:53.970] [72413] (audio_device_buffer.cc:206): SetPlayoutChannels(2)
+[2023-01-13 12:56:53.970] [72359] (discord.cpp:543): JS console: ["%c[Spellchecker]","sh is not a valid locale."]
+[2023-01-13 12:56:53.973] [72359] (discord.cpp:543): JS console: ["%c[Spellchecker]","Switching to en-GB","(available)"]
+[2023-01-13 12:56:54.004] [72359] (discord.cpp:543): JS console: ["[FAST CONNECT] connected in 349ms"]
+[2023-01-13 12:56:54.379] [72359] (discord.cpp:543): JS console: ["Deprecation warning: value provided is not in a recognized RFC2822 or ISO format. moment construction falls back to js Date(), which is not reliable across all browsers and versions. Non RFC2822/ISO date formats are discouraged and will be removed in an upcoming major release. Please refer to http://momentjs.com/guides/#/warnings/js-date/ for more info.\nArguments: \n[0] _isAMomentObject: true, _isUTC: false, _useUTC: false, _l: undefined, _i: 5/13/2022 10:00 -0800, _f: undefined, _strict: undefined, _locale: [object Object]\nError\n    at Function.createFromInputFallback (https://discord.com/assets/3a4036348e9c3b0d0e79.js:1268:330)\n    at Bn (https://discord.com/assets/3a4036348e9c3b0d0e79.js:1294:696)\n    at Wn (https://discord.com/assets/3a4036348e9c3b0d0e79.js:1297:356)\n    at Zn (https://discord.com/assets/3a4036348e9c3b0d0e79.js:1297:199)\n    at Yn (https://discord.com/assets/3a4036348e9c3b0d0e79.js:1296:886)\n    at Kn (https://discord.com/assets/3a4036348e9c3b0d0e79.js:1297:697)\n    at zn (https://discord.com/assets/3a4036348e9c3b0d0e79.js:1297:731)\n    at o (https://discord.com/assets/3a4036348e9c3b0d0e79.js:1264:961)\n    at Object.918513 (https://discord.com/assets/d23cf5eb55561dbce3ee.js:2443:761)\n    at l (https://discord.com/assets/ba1e9c2e0f7b749bc301.js:1:154)\n    at Object.908570 (https://discord.com/assets/d23cf5eb55561dbce3ee.js:2341:476)\n    at l (https://discord.com/assets/ba1e9c2e0f7b749bc301.js:1:154)\n    at Object.101577 (https://discord.com/assets/d23cf5eb55561dbce3ee.js:240:200)\n    at l (https://discord.com/assets/ba1e9c2e0f7b749bc301.js:1:154)\n    at Object.877271 (https://discord.com/assets/d23cf5eb55561dbce3ee.js:357:620)\n    at l (https://discord.com/assets/ba1e9c2e0f7b749bc301.js:1:154)\n    at Module.12688 (https://discord.com/assets/6192e5d4411a4b5b1a4d.js:91:176)\n    at Function.l (https://discord.com/assets/ba1e9c2e0f7b749bc301.js:1:154)"]
+[2023-01-13 12:56:54.468] [72359] (discord.cpp:543): JS console: ["%c[CloudSyncUtils]","CloudSync is not supported on this platform"]
+[2023-01-13 12:56:54.472] [72359] (discord.cpp:543): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2023-01-13 12:56:55.262] [72359] (discord.cpp:543): JS console: ["%c[GatewaySocket]","[CONNECT] wss://gateway.discord.gg, encoding: etf, version: 9, compression: zlib-stream"]
+[2023-01-13 12:56:55.262] [72359] (discord.cpp:543): JS console: ["%c[GatewaySocket]","[FAST CONNECT] successfully took over websocket, state:","[object Object]"]
+[2023-01-13 12:56:55.262] [72359] (discord.cpp:543): JS console: ["%c[GatewaySocket]","[CONNECTED] wss://gateway.discord.gg/?encoding=etf&v=9&compress=zlib-stream in 0 ms"]
+[2023-01-13 12:56:55.262] [72359] (discord.cpp:543): JS console: ["%c[ConnectionStore]","handleIdentify called","[object Object]"]
+[2023-01-13 12:56:55.262] [72359] (discord.cpp:543): JS console: ["%c[GatewaySocket]","[IDENTIFY]"]
+[2023-01-13 12:56:55.267] [72359] (discord.cpp:543): JS console: ["%c[GatewaySocket]","[HELLO] via \ngateway-prd-us-east1-c-61rw: 0, heartbeat interval: 41250, took 5 ms"]
+[2023-01-13 12:56:56.223] [72359] (discord.cpp:543): JS console: ["%c[GatewaySocket]","[READY] took 960ms, as 82e92680fb90551865ca1d3c8d090c6b via \ngateway-prd-us-east1-c-61rw: 403.827\n|  id_created: 0.927\n|  session_lookup_time: 0.316\n|  session_lookup_finished: 0.014\n|  discord-sessions-blue-prd-2-56: 388.85\n|  |  start_session: 260.867\n|  |  |  discord-api-d8bcc6f9-62x22: 231.625\n|  |  |  |  get_user: 17.961\n|  |  |  |  get_guilds: 77.578\n|  |  |  |  user_settings_proto: 0.151\n|  |  |  |  relationships: 69.05\n|  |  |  |  friend_suggestion: 0.074\n|  |  |  |  connections: 0.385\n|  |  |  |  serialized_read_states: 0.01\n|  |  |  |  pending_payments: 0.003\n|  |  |  |  send_scheduled_deletion_message: 0.002\n|  |  |  |  sanitize_premium_perks: 0.002\n|  |  |  |  guild_join_requests: 0.002\n|  |  |  |  user_guild_settings: 0.002\n|  |  |  |  serialized_private_channels: 33.424\n|  |  |  |  experiments: 9.127\n|  |  |  |  affine_user_ids: 10.771\n|  |  |  |  required_action: 0.006\n|  |  |  |  authorized_ip_coro: 0.002\n|  |  starting_guild_connect: 0.095\n|  |  presence_started: 36.698\n|  |  guilds_started: 1.782\n|  |  guilds_connect: 74.694\n|  |  presence_connect: 0.001\n|  |  connect_finished: 74.715\n|  |  build_ready: 7.397\n|  |  optimize_ready: 6.913\n|  |  split_ready: 0.381\n|  |  clean_ready: 0"]
+[2023-01-13 12:56:56.239] [72359] (discord.cpp:543): JS console: ["%c[GatewaySocket]","Updating resume url to wss://gateway-us-east1-c.discord.gg"]
+[2023-01-13 12:56:56.253] [72359] (discord.cpp:543): JS console: ["%c[GatewaySocket]","[READY_SUPPLEMENTAL] took 991ms"]
+[2023-01-13 12:56:56.293] [72359] (discord.cpp:543): JS console: ["%c[AuthenticationStore]","handleConnectionOpen called","[object Object]"]
+[2023-01-13 12:56:56.316] [72359] (discord.cpp:543): JS console: ["%c[Spotify]","WS Connecting"]
+[2023-01-13 12:56:56.316] [72359] (discord.cpp:543): JS console: ["%c[Spotify]","Added account: r9ca8n92t3t5uv66qimt5ql58"]
+[2023-01-13 12:56:56.333] [72359] (discord.cpp:543): JS console: ["%c[NativeDispatchUtils]","Tried getting Dispatch instance before instantiated"]
+[2023-01-13 12:56:56.345] [72359] (discord.cpp:543): JS console: ["%c[MessageActionCreators]","Fetching messages for 823189352656928808 between undefined and undefined. jump={\"jumpType\":\"ANIMATED\"}"]
+[2023-01-13 12:56:56.623] [72359] (discord.cpp:543): JS console: ["%c[MessageActionCreators]","Fetched 50 messages for 823189352656928808 isBefore:false isAfter:false"]
+[2023-01-13 12:56:56.796] [72359] (discord.cpp:543): JS console: ["%c[Flux]","Slow dispatch on GAMES_DATABASE_UPDATE: 120ms"]
+[2023-01-13 12:56:56.838] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 12:56:56.956] [72359] (discord.cpp:543): JS console: ["%c[Spotify]","WS Disconnected. Next retry in 612ms"]
+[2023-01-13 12:56:57.496] [72359] (discord.cpp:543): JS console: ["Initializing krisp module"]
+[2023-01-13 12:56:57.774] [72359] (discord.cpp:543): JS console: ["Downloaded complete without corresponding downloading event for module ","discord_krisp"]
+[2023-01-13 12:56:57.801] [72359] (discord.cpp:543): JS console: ["%c[Spotify]","WS Connecting"]
+[2023-01-13 12:56:58.006] [72359] (discord.cpp:543): JS console: ["%c[RPCServer:WSS]","Starting on 6463"]
+[2023-01-13 12:56:58.007] [72359] (discord.cpp:543): JS console: ["%c[RPCServer:IPC]","Starting on /run/user/1000/discord-ipc-0"]
+[2023-01-13 12:56:58.120] [72359] (discord.cpp:543): JS console: ["%c[Spotify]","WS Disconnected. Next retry in 1725ms"]
+[2023-01-13 12:56:59.842] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 12:56:59.845] [72359] (discord.cpp:543): JS console: ["%c[Spotify]","WS Connecting"]
+[2023-01-13 12:57:00.188] [72359] (discord.cpp:543): JS console: ["%c[Spotify]","WS Disconnected. Next retry in 7153ms"]
+[2023-01-13 12:57:01.900] [72359] (discord.cpp:543): JS console: ["%c[RTCLatencyTestManager]","RTC cached preferred region is rotterdam"]
+[2023-01-13 12:57:02.842] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 12:57:05.845] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 12:57:07.341] [72359] (discord.cpp:543): JS console: ["%c[Spotify]","WS Connecting"]
+[2023-01-13 12:57:07.692] [72359] (discord.cpp:543): JS console: ["%c[Spotify]","WS Disconnected. Next retry in 43630ms"]
+[2023-01-13 12:57:08.848] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 12:57:11.848] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 12:57:14.852] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 12:57:16.043] [72359] (discord.cpp:543): JS console: ["%c[MessageActionCreators]","Fetching messages for 684200427834966130 between undefined and undefined. jump={\"jumpType\":\"ANIMATED\"}"]
+[2023-01-13 12:57:16.280] [72359] (discord.cpp:543): JS console: ["%c[MessageActionCreators]","Fetched 50 messages for 684200427834966130 isBefore:false isAfter:false"]
+[2023-01-13 12:57:17.855] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 12:57:20.855] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 12:57:23.856] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 12:57:26.858] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 12:57:29.862] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 12:57:32.865] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 12:57:35.867] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 12:57:35.908] [72359] (discord.cpp:543): JS console: ["%c[MessageActionCreators]","Fetching messages for 1025600900963774464 between undefined and undefined. jump={\"jumpType\":\"ANIMATED\"}"]
+[2023-01-13 12:57:35.976] [72359] (discord.cpp:543): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/990614244884115497/1025600900963774464"]
+[2023-01-13 12:57:36.228] [72359] (discord.cpp:543): JS console: ["%c[MessageActionCreators]","Fetched 50 messages for 1025600900963774464 isBefore:false isAfter:false"]
+[2023-01-13 12:57:38.321] [72359] (discord.cpp:543): JS console: ["%c[MessageActionCreators]","Fetching messages for 990614246066905146 between undefined and undefined. jump={\"isHighlight\":false,\"jumpType\":\"ANIMATED\"}"]
+[2023-01-13 12:57:38.378] [72359] (discord.cpp:543): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/990614244884115497/990614246066905146"]
+[2023-01-13 12:57:38.727] [72359] (discord.cpp:543): JS console: ["%c[MessageActionCreators]","Fetched 50 messages for 990614246066905146 isBefore:false isAfter:false"]
+[2023-01-13 12:57:38.868] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 12:57:41.872] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 12:57:42.020] [72359] (discord.cpp:543): JS console: ["%c[ClientStateStore]","Gap detected in read state versions","358637","358639","[object Object]"]
+[2023-01-13 12:57:44.875] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 12:57:46.167] [72359] (discord.cpp:543): JS console: ["%c[discord_protos.discord_users.v1.FrecencyUserSettings]","Loading proto"]
+[2023-01-13 12:57:46.402] [72359] (discord.cpp:543): JS console: ["%c[discord_protos.discord_users.v1.PreloadedUserSettings]","Updating localization with delay 0"]
+[2023-01-13 12:57:46.406] [72359] (discord.cpp:543): JS console: ["%c[discord_protos.discord_users.v1.PreloadedUserSettings]","Scheduling save from markDirty"]
+[2023-01-13 12:57:46.423] [72359] (discord.cpp:543): JS console: ["%c[discord_protos.discord_users.v1.PreloadedUserSettings]","Persisting proto"]
+[2023-01-13 12:57:47.875] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 12:57:50.878] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 12:57:51.323] [72359] (discord.cpp:543): JS console: ["%c[Spotify]","WS Connecting"]
+[2023-01-13 12:57:51.651] [72359] (discord.cpp:543): JS console: ["%c[Spotify]","WS Disconnected. Next retry in 60000ms"]
+[2023-01-13 12:57:53.881] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 12:57:56.882] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 12:57:59.885] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 12:58:02.888] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 12:58:05.820] [72359] (discord.cpp:543): JS console: ["%c[MessageActionCreators]","Fetching messages for 998373331914981466 between undefined and undefined. jump={\"isHighlight\":false,\"jumpType\":\"ANIMATED\"}"]
+[2023-01-13 12:58:05.889] [72359] (discord.cpp:543): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/990614244884115497/998373331914981466"]
+[2023-01-13 12:58:05.891] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 12:58:06.104] [72359] (discord.cpp:543): JS console: ["%c[MessageActionCreators]","Fetched 50 messages for 998373331914981466 isBefore:false isAfter:false"]
+[2023-01-13 12:58:08.892] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 12:58:09.452] [72359] (discord.cpp:543): JS console: ["%c[ClientStateStore]","Gap detected in read state versions","358639","358641","[object Object]"]
+[2023-01-13 12:58:11.894] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 12:58:14.898] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 12:58:17.901] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 12:58:20.904] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 12:58:23.905] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 12:58:26.908] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 12:58:29.911] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 12:58:32.913] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 12:58:35.914] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 12:58:38.917] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 12:58:41.918] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 12:58:44.922] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 12:58:47.922] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 12:58:50.924] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 12:58:51.651] [72359] (discord.cpp:543): JS console: ["%c[Spotify]","WS Connecting"]
+[2023-01-13 12:58:52.116] [72359] (discord.cpp:543): JS console: ["%c[Spotify]","WS Disconnected. Next retry in 60000ms"]
+[2023-01-13 12:58:53.925] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 12:58:56.928] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 12:58:59.930] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 12:59:02.932] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 12:59:05.934] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 12:59:08.935] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 12:59:09.128] [72359] (discord.cpp:543): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/717324122585301094/823189352656928808"]
+[2023-01-13 12:59:11.938] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 12:59:14.938] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 12:59:17.942] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 12:59:20.945] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 12:59:23.948] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 12:59:26.948] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 12:59:29.952] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 12:59:32.955] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 12:59:35.959] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 12:59:38.962] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 12:59:41.962] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 12:59:44.966] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 12:59:47.969] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 12:59:50.970] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 12:59:52.117] [72359] (discord.cpp:543): JS console: ["%c[Spotify]","WS Connecting"]
+[2023-01-13 12:59:52.480] [72359] (discord.cpp:543): JS console: ["%c[Spotify]","WS Disconnected. Next retry in 60000ms"]
+[2023-01-13 12:59:53.973] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 12:59:56.976] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 12:59:59.980] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:00:02.983] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:00:05.986] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:00:08.989] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:00:11.992] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:00:14.995] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:00:17.998] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:00:21.002] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:00:24.005] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:00:27.008] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:00:30.011] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:00:33.012] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:00:36.015] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:00:39.015] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:00:42.018] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:00:43.169] [72413] (audio_coding.cpp:147): Using software Opus decoder
+[2023-01-13 13:00:43.169] [72413] (audio_coding.cpp:164): Using software Opus encoder
+[2023-01-13 13:00:43.169] [72413] (bitrate_prober.cc:72): Bandwidth probing enabled, set to inactive
+[2023-01-13 13:00:43.169] [72413] (cpu_info.cc:53): Available number of cores: 16
+[2023-01-13 13:00:43.169] [72413] (aimd_rate_control.cc:117): Using aimd rate control with back off factor 0.85
+[2023-01-13 13:00:43.169] [72413] (remote_bitrate_estimator_single_stream.cc:72): RemoteBitrateEstimatorSingleStream: Instantiating.
+[2023-01-13 13:00:43.169] [72413] (remote_estimator_proxy.cc:50): Maximum interval between transport feedback RTCP messages (ms): 250
+[2023-01-13 13:00:43.169] [72413] (paced_sender.cc:186): ProcessThreadAttached 0x1045d140
+[2023-01-13 13:00:43.170] [72413] (delay_manager.cc:85): Delay manager config: quantile=0.97 forget_factor=0.9993 start_forget_weight=2 resample_interval_ms=0 max_history_ms=2000
+[2023-01-13 13:00:43.170] [72413] (decision_logic.cc:66): NetEq decision logic settings: estimate_dtx_delay=0 time_stretch_cn=0 target_level_window_ms=100
+[2023-01-13 13:00:43.170] [72413] (neteq_impl.cc:170): NetEq config: sample_rate_hz=16000, enable_post_decode_vad=true, max_packets_in_buffer=200, min_delay_ms=0, enable_fast_accelerate=false, enable_muted_state=false, enable_rtx_handling=false, extra_output_delay_ms=0
+[2023-01-13 13:00:43.170] [72413] (audio_coding_module.cc:226): Created
+[2023-01-13 13:00:43.170] [72413] (audio_send_stream.cc:162): AudioSendStream: 1
+[2023-01-13 13:00:43.170] [72413] (audio_send_stream.cc:229): AudioSendStream::ConfigureStream: {rtp: {ssrc: 1, extmap-allow-mixed: false, extensions: [], c_name: }, rtcp_report_interval_ms: 5000, send_transport: (Transport), min_bitrate_bps: -1, max_bitrate_bps: -1, has audio_network_adaptor_config: false, has_dscp: false, send_codec_spec: {nack_enabled: false, transport_cc_enabled: false, cng_payload_type: <unset>, red_payload_type: <unset>, payload_type: 0, format: {name: pcmu, clockrate_hz: 8000, num_channels: 1, parameters: {}}}}
+[2023-01-13 13:00:43.170] [72413] (call.cc:1168): UpdateAggregateNetworkState: aggregate_state change to up
+[2023-01-13 13:00:43.170] [72413] (audio_device_impl.cc:889): Recording
+[2023-01-13 13:00:43.170] [72413] (audio_device_impl.cc:808): InitRecording
+[2023-01-13 13:00:43.170] [72413] (audio_device_impl.cc:827): RecordingIsInitialized
+[2023-01-13 13:00:43.170] [72949] (rtp_transport_controller_send.cc:599): Creating fallback congestion controller
+[2023-01-13 13:00:43.170] [72949] (alr_experiment.cc:79): Using ALR experiment settings: pacing factor: 1, max pacer queue length: 2875, ALR bandwidth usage percent: 80, ALR start budget level percent: 40, ALR end budget level percent: -60, ALR experiment group ID: 3
+[2023-01-13 13:00:43.170] [72949] (trendline_estimator.cc:188): Using Trendline filter for delay change estimation with settings sort:false,cap:false,beginning_packets:7,end_packets:7,cap_uncertainty:0,window_size:20 and no network state predictor
+[2023-01-13 13:00:43.170] [72949] (trendline_estimator.cc:188): Using Trendline filter for delay change estimation with settings sort:false,cap:false,beginning_packets:7,end_packets:7,cap_uncertainty:0,window_size:20 and no network state predictor
+[2023-01-13 13:00:43.170] [72949] (aimd_rate_control.cc:117): Using aimd rate control with back off factor 0.85
+[2023-01-13 13:00:43.170] [72949] (delay_based_bwe.cc:117): Initialized DelayBasedBwe with separate audio overuse detectionenabled:false,packet_threshold:10,time_threshold:1 s and alr limited backoff disabled
+[2023-01-13 13:00:43.170] [72949] (delay_based_bwe.cc:378): BWE Setting start bitrate to: 300 kbps
+[2023-01-13 13:00:43.170] [72949] (probe_controller.cc:280): Measured bitrate: 300000 Minimum to probe further: 1260000
+[2023-01-13 13:00:43.170] [72949] (bitrate_prober.cc:114): Probe cluster (bitrate:min bytes:min packets): (900000:1688:5)
+[2023-01-13 13:00:43.170] [72949] (bitrate_prober.cc:114): Probe cluster (bitrate:min bytes:min packets): (1800000:3375:5)
+[2023-01-13 13:00:43.170] [72949] (bitrate_allocator.cc:394): Current BWE 300000
+[2023-01-13 13:00:43.170] [72413] (audio_device_buffer.cc:180): SetRecordingSampleRate(44100)
+[2023-01-13 13:00:43.170] [72413] (audio_device_buffer.cc:200): SetRecordingChannels(2)
+[2023-01-13 13:00:43.170] [72413] (audio_device_impl.cc:814): output: 0
+[2023-01-13 13:00:43.170] [72413] (audio_device_impl.cc:864): StartRecording
+[2023-01-13 13:00:43.170] [72413] (audio_device_impl.cc:889): Recording
+[2023-01-13 13:00:43.170] [72413] (audio_device_buffer.cc:117): StartRecording
+[2023-01-13 13:00:43.172] [72413] (audio_device_impl.cc:871): output: 0
+[2023-01-13 13:00:43.172] [72413] (audio_device_impl.cc:448): MicrophoneIsInitialized
+[2023-01-13 13:00:43.172] [72413] (audio_mixer_manager_pulse_linux.cc:196): MicrophoneIsInitialized
+[2023-01-13 13:00:43.172] [72413] (audio_device_impl.cc:451): output: 1
+[2023-01-13 13:00:43.172] [72413] (audio_device_impl.cc:889): Recording
+[2023-01-13 13:00:43.172] [72413] (bitrate_prober.cc:72): Bandwidth probing enabled, set to inactive
+[2023-01-13 13:00:43.172] [72413] (aimd_rate_control.cc:117): Using aimd rate control with back off factor 0.85
+[2023-01-13 13:00:43.172] [72413] (remote_bitrate_estimator_single_stream.cc:72): RemoteBitrateEstimatorSingleStream: Instantiating.
+[2023-01-13 13:00:43.172] [72413] (remote_estimator_proxy.cc:50): Maximum interval between transport feedback RTCP messages (ms): 250
+[2023-01-13 13:00:43.172] [72413] (paced_sender.cc:186): ProcessThreadAttached 0x1045cec0
+[2023-01-13 13:00:43.172] [72413] (delay_manager.cc:85): Delay manager config: quantile=0.97 forget_factor=0.9993 start_forget_weight=2 resample_interval_ms=0 max_history_ms=2000
+[2023-01-13 13:00:43.172] [72413] (decision_logic.cc:66): NetEq decision logic settings: estimate_dtx_delay=0 time_stretch_cn=0 target_level_window_ms=100
+[2023-01-13 13:00:43.172] [72413] (neteq_impl.cc:170): NetEq config: sample_rate_hz=16000, enable_post_decode_vad=true, max_packets_in_buffer=200, min_delay_ms=0, enable_fast_accelerate=false, enable_muted_state=false, enable_rtx_handling=false, extra_output_delay_ms=0
+[2023-01-13 13:00:43.172] [72413] (audio_coding_module.cc:226): Created
+[2023-01-13 13:00:43.172] [72413] (audio_send_stream.cc:162): AudioSendStream: 1
+[2023-01-13 13:00:43.172] [72413] (audio_send_stream.cc:229): AudioSendStream::ConfigureStream: {rtp: {ssrc: 1, extmap-allow-mixed: false, extensions: [], c_name: }, rtcp_report_interval_ms: 5000, send_transport: (Transport), min_bitrate_bps: -1, max_bitrate_bps: -1, has audio_network_adaptor_config: false, has_dscp: false, send_codec_spec: {nack_enabled: false, transport_cc_enabled: false, cng_payload_type: <unset>, red_payload_type: <unset>, payload_type: 0, format: {name: pcmu, clockrate_hz: 8000, num_channels: 1, parameters: {}}}}
+[2023-01-13 13:00:43.172] [72413] (call.cc:1168): UpdateAggregateNetworkState: aggregate_state change to up
+[2023-01-13 13:00:43.172] [72413] (audio_device_impl.cc:889): Recording
+[2023-01-13 13:00:43.172] [72413] (audio_device_impl.cc:448): MicrophoneIsInitialized
+[2023-01-13 13:00:43.172] [72413] (audio_mixer_manager_pulse_linux.cc:196): MicrophoneIsInitialized
+[2023-01-13 13:00:43.172] [72413] (audio_device_impl.cc:451): output: 1
+[2023-01-13 13:00:43.172] [72953] (rtp_transport_controller_send.cc:599): Creating fallback congestion controller
+[2023-01-13 13:00:43.172] [72413] (audio_device_impl.cc:889): Recording
+[2023-01-13 13:00:43.172] [72953] (alr_experiment.cc:79): Using ALR experiment settings: pacing factor: 1, max pacer queue length: 2875, ALR bandwidth usage percent: 80, ALR start budget level percent: 40, ALR end budget level percent: -60, ALR experiment group ID: 3
+[2023-01-13 13:00:43.172] [72953] (trendline_estimator.cc:188): Using Trendline filter for delay change estimation with settings sort:false,cap:false,beginning_packets:7,end_packets:7,cap_uncertainty:0,window_size:20 and no network state predictor
+[2023-01-13 13:00:43.172] [72953] (trendline_estimator.cc:188): Using Trendline filter for delay change estimation with settings sort:false,cap:false,beginning_packets:7,end_packets:7,cap_uncertainty:0,window_size:20 and no network state predictor
+[2023-01-13 13:00:43.172] [72953] (aimd_rate_control.cc:117): Using aimd rate control with back off factor 0.85
+[2023-01-13 13:00:43.172] [72953] (delay_based_bwe.cc:117): Initialized DelayBasedBwe with separate audio overuse detectionenabled:false,packet_threshold:10,time_threshold:1 s and alr limited backoff disabled
+[2023-01-13 13:00:43.172] [72953] (delay_based_bwe.cc:378): BWE Setting start bitrate to: 300 kbps
+[2023-01-13 13:00:43.172] [72953] (probe_controller.cc:280): Measured bitrate: 300000 Minimum to probe further: 1260000
+[2023-01-13 13:00:43.172] [72953] (bitrate_prober.cc:114): Probe cluster (bitrate:min bytes:min packets): (900000:1688:5)
+[2023-01-13 13:00:43.172] [72953] (bitrate_prober.cc:114): Probe cluster (bitrate:min bytes:min packets): (1800000:3375:5)
+[2023-01-13 13:00:43.172] [72953] (bitrate_allocator.cc:394): Current BWE 300000
+[2023-01-13 13:00:43.172] [72413] (call.cc:1168): UpdateAggregateNetworkState: aggregate_state change to down
+[2023-01-13 13:00:43.172] [72413] (audio_send_stream.cc:178): ~AudioSendStream: 1
+[2023-01-13 13:00:43.172] [72949] (pacing_controller.cc:162): PacedSender paused.
+[2023-01-13 13:00:43.172] [72949] (control_handler.cc:78): Bitrate estimate state changed, BWE: 300 kbps.
+[2023-01-13 13:00:43.172] [72413] (paced_sender.cc:186): ProcessThreadAttached 0x0
+[2023-01-13 13:00:43.172] [72413] (paced_sender.cc:186): ProcessThreadAttached 0x0
+[2023-01-13 13:00:43.194] [72418] (audio_device_buffer.cc:238): Size of recording buffer: 882
+[2023-01-13 13:00:43.194] [72418] (captured_audio_processor.cpp:86): Audio frames processed: 0, noise canceller process time: 0 [ms]
+[2023-01-13 13:00:43.194] [72418] (captured_audio_processor.cpp:97): Audio frame: 0, samples: 80, channels: 1, rate: 8000 [Hz], bytes: 2, level: 0
+[2023-01-13 13:00:43.215] [72956] (rtp_sender_audio.cc:317): First audio RTP packet sent to pacer
+[2023-01-13 13:00:44.197] [72953] (probe_controller.cc:378): kWaitingForProbingResult: timeout
+[2023-01-13 13:00:45.021] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:00:45.675] [72954] (rtcp_sender.cc:471): Sender Report {ssrc: 1, ntp: 3882603645:2903256158, rtp_timestamp: 792414274, last_rtp_timestamp: 19520, last_frame_capture_time_ms: 9774562, now_us: 9774575967, rtp_rate: 8}
+[2023-01-13 13:00:46.598] [72413] (audio_processing_impl.cc:531): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 }, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 1, level: High }, transient_suppression: { enabled: 0 }, voice_detection: { enabled: 0 }, gain_controller1: { enabled: 1, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_level_minimum: 0, analog_level_maximum: 255 }, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, level_estimator: { vad_probability_attack: 1, type: Rms, adjacent_speech_frames_threshold: 1, initial_saturation_margin_db: 20, extra_saturation_margin_db: 2 }, gain_applier: { adjacent_speech_frames_threshold: 1, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50 }}}, residual_echo_detector: { enabled: 1 }, level_estimation: { enabled: 0 }}
+[2023-01-13 13:00:46.598] [72413] (audio_processing_impl.cc:531): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 }, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 0, level: High }, transient_suppression: { enabled: 0 }, voice_detection: { enabled: 0 }, gain_controller1: { enabled: 1, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_level_minimum: 0, analog_level_maximum: 255 }, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, level_estimator: { vad_probability_attack: 1, type: Rms, adjacent_speech_frames_threshold: 1, initial_saturation_margin_db: 20, extra_saturation_margin_db: 2 }, gain_applier: { adjacent_speech_frames_threshold: 1, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50 }}}, residual_echo_detector: { enabled: 1 }, level_estimation: { enabled: 0 }}
+[2023-01-13 13:00:46.598] [72413] (audio_processing_impl.cc:531): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 }, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 0, level: High }, transient_suppression: { enabled: 0 }, voice_detection: { enabled: 0 }, gain_controller1: { enabled: 1, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_level_minimum: 0, analog_level_maximum: 255 }, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, level_estimator: { vad_probability_attack: 1, type: Rms, adjacent_speech_frames_threshold: 1, initial_saturation_margin_db: 20, extra_saturation_margin_db: 2 }, gain_applier: { adjacent_speech_frames_threshold: 1, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50 }}}, residual_echo_detector: { enabled: 1 }, level_estimation: { enabled: 0 }}
+[2023-01-13 13:00:46.598] [72413] (captured_audio_processor.cpp:119): SetNoiseCancellation: 1
+[2023-01-13 13:00:46.598] [72413] (bitrate_prober.cc:72): Bandwidth probing enabled, set to inactive
+[2023-01-13 13:00:46.598] [72413] (aimd_rate_control.cc:117): Using aimd rate control with back off factor 0.85
+[2023-01-13 13:00:46.598] [72413] (remote_bitrate_estimator_single_stream.cc:72): RemoteBitrateEstimatorSingleStream: Instantiating.
+[2023-01-13 13:00:46.598] [72413] (remote_estimator_proxy.cc:50): Maximum interval between transport feedback RTCP messages (ms): 250
+[2023-01-13 13:00:46.598] [72413] (paced_sender.cc:186): ProcessThreadAttached 0x4764c40
+[2023-01-13 13:00:46.598] [72413] (delay_manager.cc:85): Delay manager config: quantile=0.97 forget_factor=0.9993 start_forget_weight=2 resample_interval_ms=0 max_history_ms=2000
+[2023-01-13 13:00:46.598] [72413] (decision_logic.cc:66): NetEq decision logic settings: estimate_dtx_delay=0 time_stretch_cn=0 target_level_window_ms=100
+[2023-01-13 13:00:46.598] [72413] (neteq_impl.cc:170): NetEq config: sample_rate_hz=16000, enable_post_decode_vad=true, max_packets_in_buffer=200, min_delay_ms=0, enable_fast_accelerate=false, enable_muted_state=true, enable_rtx_handling=false, extra_output_delay_ms=0
+[2023-01-13 13:00:46.598] [72413] (audio_receive_stream.cc:123): AudioReceiveStream: 1
+[2023-01-13 13:00:46.598] [72413] (rtp_demuxer.cc:144): Added sink = 559c000 for criteria {mid: <empty>, rsid: <empty>, ssrcs: [1, ], payload_types = []}
+[2023-01-13 13:00:46.598] [72413] (audio_receive_stream.cc:383): AudioReceiveStream::ConfigureStream: {rtp: {remote_ssrc: 1, local_ssrc: 0, transport_cc: off, nack: {rtp_history_ms: 0}, extensions: []}, rtcp_send_transport: (Transport)}
+[2023-01-13 13:00:46.598] [72413] (call.cc:1168): UpdateAggregateNetworkState: aggregate_state change to up
+[2023-01-13 13:00:46.598] [72413] (audio_device_impl.cc:858): Playing
+[2023-01-13 13:00:46.598] [72413] (audio_device_impl.cc:795): InitPlayout
+[2023-01-13 13:00:46.598] [72413] (audio_device_impl.cc:821): PlayoutIsInitialized
+[2023-01-13 13:00:46.598] [72958] (rtp_transport_controller_send.cc:599): Creating fallback congestion controller
+[2023-01-13 13:00:46.598] [72958] (alr_experiment.cc:79): Using ALR experiment settings: pacing factor: 1, max pacer queue length: 2875, ALR bandwidth usage percent: 80, ALR start budget level percent: 40, ALR end budget level percent: -60, ALR experiment group ID: 3
+[2023-01-13 13:00:46.598] [72958] (trendline_estimator.cc:188): Using Trendline filter for delay change estimation with settings sort:false,cap:false,beginning_packets:7,end_packets:7,cap_uncertainty:0,window_size:20 and no network state predictor
+[2023-01-13 13:00:46.598] [72958] (trendline_estimator.cc:188): Using Trendline filter for delay change estimation with settings sort:false,cap:false,beginning_packets:7,end_packets:7,cap_uncertainty:0,window_size:20 and no network state predictor
+[2023-01-13 13:00:46.598] [72958] (aimd_rate_control.cc:117): Using aimd rate control with back off factor 0.85
+[2023-01-13 13:00:46.598] [72958] (delay_based_bwe.cc:117): Initialized DelayBasedBwe with separate audio overuse detectionenabled:false,packet_threshold:10,time_threshold:1 s and alr limited backoff disabled
+[2023-01-13 13:00:46.598] [72958] (delay_based_bwe.cc:378): BWE Setting start bitrate to: 300 kbps
+[2023-01-13 13:00:46.598] [72958] (probe_controller.cc:280): Measured bitrate: 300000 Minimum to probe further: 1260000
+[2023-01-13 13:00:46.598] [72958] (bitrate_prober.cc:114): Probe cluster (bitrate:min bytes:min packets): (900000:1688:5)
+[2023-01-13 13:00:46.598] [72958] (bitrate_prober.cc:114): Probe cluster (bitrate:min bytes:min packets): (1800000:3375:5)
+[2023-01-13 13:00:46.598] [72958] (bitrate_allocator.cc:394): Current BWE 300000
+[2023-01-13 13:00:46.598] [72413] (audio_device_buffer.cc:186): SetPlayoutSampleRate(44100)
+[2023-01-13 13:00:46.598] [72413] (audio_device_buffer.cc:206): SetPlayoutChannels(2)
+[2023-01-13 13:00:46.598] [72418] (noise_canceller.cpp:36): Creating noise canceller, channels: 1, rate 8000, duration: 10 [ms], buffer size: 160 [bytes]
+[2023-01-13 13:00:46.598] [72413] (audio_device_impl.cc:801): output: 0
+[2023-01-13 13:00:46.598] [72413] (audio_device_impl.cc:833): StartPlayout
+[2023-01-13 13:00:46.598] [72413] (audio_device_impl.cc:858): Playing
+[2023-01-13 13:00:46.598] [72413] (audio_device_buffer.cc:98): StartPlayout
+[2023-01-13 13:00:46.599] [72413] (audio_device_impl.cc:840): output: 0
+[2023-01-13 13:00:46.599] [72419] (audio_device_buffer.cc:287): Size of playout buffer: 882
+[2023-01-13 13:00:46.599] [72413] (delay_manager.cc:85): Delay manager config: quantile=0.97 forget_factor=0.9993 start_forget_weight=2 resample_interval_ms=0 max_history_ms=2000
+[2023-01-13 13:00:46.599] [72413] (decision_logic.cc:66): NetEq decision logic settings: estimate_dtx_delay=0 time_stretch_cn=0 target_level_window_ms=100
+[2023-01-13 13:00:46.599] [72413] (neteq_impl.cc:170): NetEq config: sample_rate_hz=16000, enable_post_decode_vad=true, max_packets_in_buffer=200, min_delay_ms=0, enable_fast_accelerate=false, enable_muted_state=false, enable_rtx_handling=false, extra_output_delay_ms=0
+[2023-01-13 13:00:46.599] [72413] (audio_coding_module.cc:226): Created
+[2023-01-13 13:00:46.599] [72413] (audio_send_stream.cc:162): AudioSendStream: 1
+[2023-01-13 13:00:46.599] [72413] (audio_send_stream.cc:229): AudioSendStream::ConfigureStream: {rtp: {ssrc: 1, extmap-allow-mixed: false, extensions: [], c_name: }, rtcp_report_interval_ms: 5000, send_transport: (Transport), min_bitrate_bps: -1, max_bitrate_bps: -1, has audio_network_adaptor_config: false, has_dscp: false, send_codec_spec: {nack_enabled: false, transport_cc_enabled: false, cng_payload_type: <unset>, red_payload_type: <unset>, payload_type: 120, format: {name: opus, clockrate_hz: 48000, num_channels: 2, parameters: {stereo: 0}}}}
+[2023-01-13 13:00:46.599] [72413] (audio_encoder_opus.cc:677): Set Opus bitrate to 32000 bps.
+[2023-01-13 13:00:46.599] [72413] (audio_device_impl.cc:889): Recording
+[2023-01-13 13:00:46.599] [72413] (audio_send_stream.cc:229): AudioSendStream::ConfigureStream: {rtp: {ssrc: 1, extmap-allow-mixed: false, extensions: [], c_name: }, rtcp_report_interval_ms: 5000, send_transport: (Transport), min_bitrate_bps: -1, max_bitrate_bps: -1, has audio_network_adaptor_config: false, has_dscp: false, send_codec_spec: {nack_enabled: false, transport_cc_enabled: false, cng_payload_type: <unset>, red_payload_type: <unset>, payload_type: 120, format: {name: opus, clockrate_hz: 48000, num_channels: 1, parameters: {stereo: 0}}}}
+[2023-01-13 13:00:46.599] [72413] (audio_send_stream.cc:344): Failed to set up send codec state.
+[2023-01-13 13:00:46.599] [72413] (audio_device_impl.cc:448): MicrophoneIsInitialized
+[2023-01-13 13:00:46.599] [72413] (audio_mixer_manager_pulse_linux.cc:196): MicrophoneIsInitialized
+[2023-01-13 13:00:46.599] [72413] (audio_device_impl.cc:451): output: 1
+[2023-01-13 13:00:46.599] [72413] (audio_device_impl.cc:889): Recording
+[2023-01-13 13:00:46.599] [72413] (call.cc:1168): UpdateAggregateNetworkState: aggregate_state change to down
+[2023-01-13 13:00:46.599] [72413] (audio_send_stream.cc:178): ~AudioSendStream: 1
+[2023-01-13 13:00:46.599] [72953] (pacing_controller.cc:162): PacedSender paused.
+[2023-01-13 13:00:46.599] [72953] (control_handler.cc:78): Bitrate estimate state changed, BWE: 300 kbps.
+[2023-01-13 13:00:46.599] [72413] (paced_sender.cc:186): ProcessThreadAttached 0x0
+[2023-01-13 13:00:46.599] [72413] (paced_sender.cc:186): ProcessThreadAttached 0x0
+[2023-01-13 13:00:46.619] [72418] (noise_canceller.cpp:36): Creating noise canceller, channels: 1, rate 48000, duration: 10 [ms], buffer size: 960 [bytes]
+[2023-01-13 13:00:46.625] [72961] (rtp_sender_audio.cc:317): First audio RTP packet sent to pacer
+[2023-01-13 13:00:47.599] [72958] (probe_controller.cc:378): kWaitingForProbingResult: timeout
+[2023-01-13 13:00:48.022] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:00:49.101] [72961] (rtcp_sender.cc:471): Sender Report {ssrc: 1, ntp: 3882603649:434620625, rtp_timestamp: 3641339996, last_rtp_timestamp: 119040, last_frame_capture_time_ms: 9778001, now_us: 9778001193, rtp_rate: 48}
+[2023-01-13 13:00:51.025] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:00:52.480] [72359] (discord.cpp:543): JS console: ["%c[Spotify]","WS Connecting"]
+[2023-01-13 13:00:52.861] [72359] (discord.cpp:543): JS console: ["%c[Spotify]","WS Disconnected. Next retry in 60000ms"]
+[2023-01-13 13:00:53.205] [72418] (captured_audio_processor.cpp:86): Audio frames processed: 999, noise canceller process time: 165 [ms]
+[2023-01-13 13:00:53.205] [72418] (captured_audio_processor.cpp:97): Audio frame: 999, samples: 480, channels: 1, rate: 48000 [Hz], bytes: 2, level: 1
+[2023-01-13 13:00:54.028] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:00:57.028] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:01:00.031] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:01:03.032] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:01:03.185] [72416] (audio_device_buffer.cc:411): [REC : 10010msec, 44kHz] callbacks: 1000, samples: 441000, rate: 44056, rate diff: 0%, level: 25430
+[2023-01-13 13:01:03.185] [72416] (audio_device_buffer.cc:437): [PLAY: 10010msec, 44kHz] callbacks: 1001, samples: 441441, rate: 44100, rate diff: 0%, level: 10098
+[2023-01-13 13:01:03.205] [72418] (captured_audio_processor.cpp:86): Audio frames processed: 1999, noise canceller process time: 357 [ms]
+[2023-01-13 13:01:03.205] [72418] (captured_audio_processor.cpp:97): Audio frame: 1999, samples: 480, channels: 1, rate: 48000 [Hz], bytes: 2, level: 2407
+[2023-01-13 13:01:05.618] [72413] (audio_processing_impl.cc:531): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 }, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 0, level: High }, transient_suppression: { enabled: 0 }, voice_detection: { enabled: 0 }, gain_controller1: { enabled: 1, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_level_minimum: 0, analog_level_maximum: 255 }, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, level_estimator: { vad_probability_attack: 1, type: Rms, adjacent_speech_frames_threshold: 1, initial_saturation_margin_db: 20, extra_saturation_margin_db: 2 }, gain_applier: { adjacent_speech_frames_threshold: 1, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50 }}}, residual_echo_detector: { enabled: 1 }, level_estimation: { enabled: 0 }}
+[2023-01-13 13:01:05.618] [72413] (audio_processing_impl.cc:531): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 }, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 0, level: High }, transient_suppression: { enabled: 0 }, voice_detection: { enabled: 0 }, gain_controller1: { enabled: 1, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_level_minimum: 0, analog_level_maximum: 255 }, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, level_estimator: { vad_probability_attack: 1, type: Rms, adjacent_speech_frames_threshold: 1, initial_saturation_margin_db: 20, extra_saturation_margin_db: 2 }, gain_applier: { adjacent_speech_frames_threshold: 1, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50 }}}, residual_echo_detector: { enabled: 1 }, level_estimation: { enabled: 0 }}
+[2023-01-13 13:01:05.618] [72413] (audio_processing_impl.cc:531): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 }, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 0, level: High }, transient_suppression: { enabled: 0 }, voice_detection: { enabled: 0 }, gain_controller1: { enabled: 1, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_level_minimum: 0, analog_level_maximum: 255 }, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, level_estimator: { vad_probability_attack: 1, type: Rms, adjacent_speech_frames_threshold: 1, initial_saturation_margin_db: 20, extra_saturation_margin_db: 2 }, gain_applier: { adjacent_speech_frames_threshold: 1, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50 }}}, residual_echo_detector: { enabled: 1 }, level_estimation: { enabled: 0 }}
+[2023-01-13 13:01:05.618] [72413] (captured_audio_processor.cpp:119): SetNoiseCancellation: 1
+[2023-01-13 13:01:05.618] [72413] (bitrate_prober.cc:72): Bandwidth probing enabled, set to inactive
+[2023-01-13 13:01:05.618] [72413] (aimd_rate_control.cc:117): Using aimd rate control with back off factor 0.85
+[2023-01-13 13:01:05.618] [72413] (remote_bitrate_estimator_single_stream.cc:72): RemoteBitrateEstimatorSingleStream: Instantiating.
+[2023-01-13 13:01:05.618] [72413] (remote_estimator_proxy.cc:50): Maximum interval between transport feedback RTCP messages (ms): 250
+[2023-01-13 13:01:05.618] [72413] (paced_sender.cc:186): ProcessThreadAttached 0x4769100
+[2023-01-13 13:01:05.618] [72413] (delay_manager.cc:85): Delay manager config: quantile=0.97 forget_factor=0.9993 start_forget_weight=2 resample_interval_ms=0 max_history_ms=2000
+[2023-01-13 13:01:05.618] [72413] (decision_logic.cc:66): NetEq decision logic settings: estimate_dtx_delay=0 time_stretch_cn=0 target_level_window_ms=100
+[2023-01-13 13:01:05.618] [72413] (neteq_impl.cc:170): NetEq config: sample_rate_hz=16000, enable_post_decode_vad=true, max_packets_in_buffer=200, min_delay_ms=0, enable_fast_accelerate=false, enable_muted_state=false, enable_rtx_handling=false, extra_output_delay_ms=0
+[2023-01-13 13:01:05.618] [72413] (audio_coding_module.cc:226): Created
+[2023-01-13 13:01:05.618] [72413] (audio_send_stream.cc:162): AudioSendStream: 1
+[2023-01-13 13:01:05.618] [72413] (audio_send_stream.cc:229): AudioSendStream::ConfigureStream: {rtp: {ssrc: 1, extmap-allow-mixed: false, extensions: [], c_name: }, rtcp_report_interval_ms: 5000, send_transport: (Transport), min_bitrate_bps: -1, max_bitrate_bps: -1, has audio_network_adaptor_config: false, has_dscp: false, send_codec_spec: {nack_enabled: false, transport_cc_enabled: false, cng_payload_type: <unset>, red_payload_type: <unset>, payload_type: 0, format: {name: pcmu, clockrate_hz: 8000, num_channels: 1, parameters: {}}}}
+[2023-01-13 13:01:05.618] [72413] (call.cc:1168): UpdateAggregateNetworkState: aggregate_state change to up
+[2023-01-13 13:01:05.618] [72413] (audio_device_impl.cc:889): Recording
+[2023-01-13 13:01:05.618] [72413] (audio_device_impl.cc:448): MicrophoneIsInitialized
+[2023-01-13 13:01:05.618] [72970] (rtp_transport_controller_send.cc:599): Creating fallback congestion controller
+[2023-01-13 13:01:05.618] [72413] (audio_mixer_manager_pulse_linux.cc:196): MicrophoneIsInitialized
+[2023-01-13 13:01:05.618] [72413] (audio_device_impl.cc:451): output: 1
+[2023-01-13 13:01:05.618] [72413] (audio_device_impl.cc:889): Recording
+[2023-01-13 13:01:05.618] [72970] (alr_experiment.cc:79): Using ALR experiment settings: pacing factor: 1, max pacer queue length: 2875, ALR bandwidth usage percent: 80, ALR start budget level percent: 40, ALR end budget level percent: -60, ALR experiment group ID: 3
+[2023-01-13 13:01:05.618] [72970] (trendline_estimator.cc:188): Using Trendline filter for delay change estimation with settings sort:false,cap:false,beginning_packets:7,end_packets:7,cap_uncertainty:0,window_size:20 and no network state predictor
+[2023-01-13 13:01:05.618] [72970] (trendline_estimator.cc:188): Using Trendline filter for delay change estimation with settings sort:false,cap:false,beginning_packets:7,end_packets:7,cap_uncertainty:0,window_size:20 and no network state predictor
+[2023-01-13 13:01:05.618] [72413] (audio_send_stream.cc:178): ~AudioSendStream: 1
+[2023-01-13 13:01:05.618] [72970] (aimd_rate_control.cc:117): Using aimd rate control with back off factor 0.85
+[2023-01-13 13:01:05.618] [72970] (delay_based_bwe.cc:117): Initialized DelayBasedBwe with separate audio overuse detectionenabled:false,packet_threshold:10,time_threshold:1 s and alr limited backoff disabled
+[2023-01-13 13:01:05.618] [72970] (delay_based_bwe.cc:378): BWE Setting start bitrate to: 300 kbps
+[2023-01-13 13:01:05.618] [72970] (probe_controller.cc:280): Measured bitrate: 300000 Minimum to probe further: 1260000
+[2023-01-13 13:01:05.618] [72970] (bitrate_prober.cc:114): Probe cluster (bitrate:min bytes:min packets): (900000:1688:5)
+[2023-01-13 13:01:05.618] [72970] (bitrate_prober.cc:114): Probe cluster (bitrate:min bytes:min packets): (1800000:3375:5)
+[2023-01-13 13:01:05.618] [72970] (bitrate_allocator.cc:394): Current BWE 300000
+[2023-01-13 13:01:05.619] [72413] (audio_device_impl.cc:847): StopPlayout
+[2023-01-13 13:01:05.619] [72413] (audio_device_buffer.cc:139): StopPlayout
+[2023-01-13 13:01:05.619] [72413] (audio_device_buffer.cc:145): total playout time: 19020
+[2023-01-13 13:01:05.619] [72413] (audio_device_impl.cc:851): output: 0
+[2023-01-13 13:01:05.619] [72413] (call.cc:1168): UpdateAggregateNetworkState: aggregate_state change to down
+[2023-01-13 13:01:05.619] [72413] (audio_receive_stream.cc:144): ~AudioReceiveStream: 1
+[2023-01-13 13:01:05.619] [72413] (rtp_demuxer.cc:240): Removed sink = 559c000 bindings
+[2023-01-13 13:01:05.619] [72958] (pacing_controller.cc:162): PacedSender paused.
+[2023-01-13 13:01:05.619] [72418] (noise_canceller.cpp:36): Creating noise canceller, channels: 1, rate 8000, duration: 10 [ms], buffer size: 160 [bytes]
+[2023-01-13 13:01:05.619] [72413] (call.cc:742): WebRTC.Call.AudioBitrateReceivedInBps, periodic_samples:9, {min:23536, avg:26672, max:32536}
+[2023-01-13 13:01:05.619] [72958] (control_handler.cc:78): Bitrate estimate state changed, BWE: 300 kbps.
+[2023-01-13 13:01:05.619] [72413] (call.cc:758): WebRTC.Call.BitrateReceivedInBps, periodic_samples:9, {min:23536, avg:26672, max:32536}
+[2023-01-13 13:01:05.619] [72413] (paced_sender.cc:186): ProcessThreadAttached 0x0
+[2023-01-13 13:01:05.619] [72413] (paced_sender.cc:186): ProcessThreadAttached 0x0
+[2023-01-13 13:01:05.640] [72973] (rtp_sender_audio.cc:317): First audio RTP packet sent to pacer
+[2023-01-13 13:01:06.035] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:01:06.643] [72970] (probe_controller.cc:378): kWaitingForProbingResult: timeout
+[2023-01-13 13:01:08.128] [72413] (bitrate_prober.cc:72): Bandwidth probing enabled, set to inactive
+[2023-01-13 13:01:08.128] [72413] (aimd_rate_control.cc:117): Using aimd rate control with back off factor 0.85
+[2023-01-13 13:01:08.128] [72413] (remote_bitrate_estimator_single_stream.cc:72): RemoteBitrateEstimatorSingleStream: Instantiating.
+[2023-01-13 13:01:08.128] [72413] (remote_estimator_proxy.cc:50): Maximum interval between transport feedback RTCP messages (ms): 250
+[2023-01-13 13:01:08.128] [72413] (paced_sender.cc:186): ProcessThreadAttached 0x10455980
+[2023-01-13 13:01:08.128] [72413] (delay_manager.cc:85): Delay manager config: quantile=0.97 forget_factor=0.9993 start_forget_weight=2 resample_interval_ms=0 max_history_ms=2000
+[2023-01-13 13:01:08.128] [72413] (decision_logic.cc:66): NetEq decision logic settings: estimate_dtx_delay=0 time_stretch_cn=0 target_level_window_ms=100
+[2023-01-13 13:01:08.128] [72413] (neteq_impl.cc:170): NetEq config: sample_rate_hz=16000, enable_post_decode_vad=true, max_packets_in_buffer=200, min_delay_ms=0, enable_fast_accelerate=false, enable_muted_state=false, enable_rtx_handling=false, extra_output_delay_ms=0
+[2023-01-13 13:01:08.128] [72413] (audio_coding_module.cc:226): Created
+[2023-01-13 13:01:08.128] [72413] (audio_send_stream.cc:162): AudioSendStream: 1
+[2023-01-13 13:01:08.128] [72413] (audio_send_stream.cc:229): AudioSendStream::ConfigureStream: {rtp: {ssrc: 1, extmap-allow-mixed: false, extensions: [], c_name: }, rtcp_report_interval_ms: 5000, send_transport: (Transport), min_bitrate_bps: -1, max_bitrate_bps: -1, has audio_network_adaptor_config: false, has_dscp: false, send_codec_spec: {nack_enabled: false, transport_cc_enabled: false, cng_payload_type: <unset>, red_payload_type: <unset>, payload_type: 0, format: {name: pcmu, clockrate_hz: 8000, num_channels: 1, parameters: {}}}}
+[2023-01-13 13:01:08.128] [72413] (call.cc:1168): UpdateAggregateNetworkState: aggregate_state change to up
+[2023-01-13 13:01:08.128] [72413] (audio_device_impl.cc:889): Recording
+[2023-01-13 13:01:08.128] [72413] (audio_device_impl.cc:448): MicrophoneIsInitialized
+[2023-01-13 13:01:08.128] [72979] (rtp_transport_controller_send.cc:599): Creating fallback congestion controller
+[2023-01-13 13:01:08.128] [72413] (audio_mixer_manager_pulse_linux.cc:196): MicrophoneIsInitialized
+[2023-01-13 13:01:08.128] [72413] (audio_device_impl.cc:451): output: 1
+[2023-01-13 13:01:08.128] [72413] (audio_device_impl.cc:889): Recording
+[2023-01-13 13:01:08.128] [72979] (alr_experiment.cc:79): Using ALR experiment settings: pacing factor: 1, max pacer queue length: 2875, ALR bandwidth usage percent: 80, ALR start budget level percent: 40, ALR end budget level percent: -60, ALR experiment group ID: 3
+[2023-01-13 13:01:08.128] [72979] (trendline_estimator.cc:188): Using Trendline filter for delay change estimation with settings sort:false,cap:false,beginning_packets:7,end_packets:7,cap_uncertainty:0,window_size:20 and no network state predictor
+[2023-01-13 13:01:08.128] [72979] (trendline_estimator.cc:188): Using Trendline filter for delay change estimation with settings sort:false,cap:false,beginning_packets:7,end_packets:7,cap_uncertainty:0,window_size:20 and no network state predictor
+[2023-01-13 13:01:08.128] [72413] (call.cc:1168): UpdateAggregateNetworkState: aggregate_state change to down
+[2023-01-13 13:01:08.128] [72979] (aimd_rate_control.cc:117): Using aimd rate control with back off factor 0.85
+[2023-01-13 13:01:08.128] [72979] (delay_based_bwe.cc:117): Initialized DelayBasedBwe with separate audio overuse detectionenabled:false,packet_threshold:10,time_threshold:1 s and alr limited backoff disabled
+[2023-01-13 13:01:08.128] [72413] (audio_send_stream.cc:178): ~AudioSendStream: 1
+[2023-01-13 13:01:08.128] [72979] (delay_based_bwe.cc:378): BWE Setting start bitrate to: 300 kbps
+[2023-01-13 13:01:08.128] [72970] (pacing_controller.cc:162): PacedSender paused.
+[2023-01-13 13:01:08.128] [72979] (probe_controller.cc:280): Measured bitrate: 300000 Minimum to probe further: 1260000
+[2023-01-13 13:01:08.128] [72970] (control_handler.cc:78): Bitrate estimate state changed, BWE: 300 kbps.
+[2023-01-13 13:01:08.128] [72979] (bitrate_prober.cc:114): Probe cluster (bitrate:min bytes:min packets): (900000:1688:5)
+[2023-01-13 13:01:08.128] [72979] (bitrate_prober.cc:114): Probe cluster (bitrate:min bytes:min packets): (1800000:3375:5)
+[2023-01-13 13:01:08.128] [72979] (bitrate_allocator.cc:394): Current BWE 300000
+[2023-01-13 13:01:08.128] [72413] (paced_sender.cc:186): ProcessThreadAttached 0x0
+[2023-01-13 13:01:08.128] [72413] (paced_sender.cc:186): ProcessThreadAttached 0x0
+[2023-01-13 13:01:08.128] [72413] (audio_device_impl.cc:889): Recording
+[2023-01-13 13:01:08.128] [72413] (audio_device_impl.cc:878): StopRecording
+[2023-01-13 13:01:08.128] [72413] (audio_device_buffer.cc:153): StopRecording
+[2023-01-13 13:01:08.128] [72413] (audio_device_buffer.cc:173): HISTOGRAM(WebRTC.Audio.RecordedOnlyZeros): 0
+[2023-01-13 13:01:08.128] [72413] (audio_device_buffer.cc:176): total recording time: 24959
+[2023-01-13 13:01:08.128] [72413] (audio_device_impl.cc:882): output: 0
+[2023-01-13 13:01:08.128] [72413] (audio_device_impl.cc:878): StopRecording
+[2023-01-13 13:01:08.128] [72413] (audio_device_impl.cc:882): output: 0
+[2023-01-13 13:01:08.128] [72413] (call.cc:1168): UpdateAggregateNetworkState: aggregate_state change to down
+[2023-01-13 13:01:08.128] [72413] (audio_send_stream.cc:178): ~AudioSendStream: 1
+[2023-01-13 13:01:08.129] [72979] (pacing_controller.cc:162): PacedSender paused.
+[2023-01-13 13:01:08.129] [72979] (control_handler.cc:78): Bitrate estimate state changed, BWE: 300 kbps.
+[2023-01-13 13:01:08.129] [72413] (paced_sender.cc:186): ProcessThreadAttached 0x0
+[2023-01-13 13:01:08.129] [72413] (paced_sender.cc:186): ProcessThreadAttached 0x0
+[2023-01-13 13:01:09.038] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:01:12.041] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:01:15.044] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:01:18.047] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:01:21.050] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:01:24.052] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:01:27.055] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:01:30.058] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:01:33.062] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:01:36.065] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:01:39.068] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:01:42.072] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:01:45.075] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:01:48.075] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:01:51.078] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:01:52.863] [72359] (discord.cpp:543): JS console: ["%c[Spotify]","WS Connecting"]
+[2023-01-13 13:01:53.261] [72359] (discord.cpp:543): JS console: ["%c[Spotify]","WS Disconnected. Next retry in 60000ms"]
+[2023-01-13 13:01:54.081] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:01:57.082] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:02:00.085] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:02:03.088] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:02:06.091] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:02:09.094] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:02:12.098] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:02:15.101] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:02:18.102] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:02:21.105] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:02:24.108] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:02:27.112] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:02:30.115] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:02:33.118] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:02:36.122] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:02:39.122] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:02:42.125] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:02:45.129] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:02:48.131] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:02:51.135] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:02:53.262] [72359] (discord.cpp:543): JS console: ["%c[Spotify]","WS Connecting"]
+[2023-01-13 13:02:53.661] [72359] (discord.cpp:543): JS console: ["%c[Spotify]","WS Disconnected. Next retry in 60000ms"]
+[2023-01-13 13:02:54.138] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:02:57.141] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:03:00.145] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:03:03.148] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:03:06.151] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:03:09.155] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:03:12.158] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:03:15.161] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:03:18.164] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:03:21.168] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:03:23.858] [72413] (audio_coding.cpp:147): Using software Opus decoder
+[2023-01-13 13:03:23.858] [72413] (audio_coding.cpp:164): Using software Opus encoder
+[2023-01-13 13:03:23.858] [72413] (bitrate_prober.cc:72): Bandwidth probing enabled, set to inactive
+[2023-01-13 13:03:23.858] [72413] (aimd_rate_control.cc:117): Using aimd rate control with back off factor 0.85
+[2023-01-13 13:03:23.858] [72413] (remote_bitrate_estimator_single_stream.cc:72): RemoteBitrateEstimatorSingleStream: Instantiating.
+[2023-01-13 13:03:23.858] [72413] (remote_estimator_proxy.cc:50): Maximum interval between transport feedback RTCP messages (ms): 250
+[2023-01-13 13:03:23.858] [72413] (paced_sender.cc:186): ProcessThreadAttached 0x47dd7c0
+[2023-01-13 13:03:23.858] [72413] (delay_manager.cc:85): Delay manager config: quantile=0.97 forget_factor=0.9993 start_forget_weight=2 resample_interval_ms=0 max_history_ms=2000
+[2023-01-13 13:03:23.858] [72413] (decision_logic.cc:66): NetEq decision logic settings: estimate_dtx_delay=0 time_stretch_cn=0 target_level_window_ms=100
+[2023-01-13 13:03:23.858] [72413] (neteq_impl.cc:170): NetEq config: sample_rate_hz=16000, enable_post_decode_vad=true, max_packets_in_buffer=200, min_delay_ms=0, enable_fast_accelerate=false, enable_muted_state=false, enable_rtx_handling=false, extra_output_delay_ms=0
+[2023-01-13 13:03:23.858] [72413] (audio_coding_module.cc:226): Created
+[2023-01-13 13:03:23.858] [72413] (audio_send_stream.cc:162): AudioSendStream: 1
+[2023-01-13 13:03:23.858] [72413] (audio_send_stream.cc:229): AudioSendStream::ConfigureStream: {rtp: {ssrc: 1, extmap-allow-mixed: false, extensions: [], c_name: }, rtcp_report_interval_ms: 5000, send_transport: (Transport), min_bitrate_bps: -1, max_bitrate_bps: -1, has audio_network_adaptor_config: false, has_dscp: false, send_codec_spec: {nack_enabled: false, transport_cc_enabled: false, cng_payload_type: <unset>, red_payload_type: <unset>, payload_type: 0, format: {name: pcmu, clockrate_hz: 8000, num_channels: 1, parameters: {}}}}
+[2023-01-13 13:03:23.858] [72413] (call.cc:1168): UpdateAggregateNetworkState: aggregate_state change to up
+[2023-01-13 13:03:23.858] [72413] (audio_device_impl.cc:889): Recording
+[2023-01-13 13:03:23.858] [72413] (audio_device_impl.cc:808): InitRecording
+[2023-01-13 13:03:23.858] [72413] (audio_device_impl.cc:827): RecordingIsInitialized
+[2023-01-13 13:03:23.858] [73279] (rtp_transport_controller_send.cc:599): Creating fallback congestion controller
+[2023-01-13 13:03:23.858] [73279] (alr_experiment.cc:79): Using ALR experiment settings: pacing factor: 1, max pacer queue length: 2875, ALR bandwidth usage percent: 80, ALR start budget level percent: 40, ALR end budget level percent: -60, ALR experiment group ID: 3
+[2023-01-13 13:03:23.858] [73279] (trendline_estimator.cc:188): Using Trendline filter for delay change estimation with settings sort:false,cap:false,beginning_packets:7,end_packets:7,cap_uncertainty:0,window_size:20 and no network state predictor
+[2023-01-13 13:03:23.858] [73279] (trendline_estimator.cc:188): Using Trendline filter for delay change estimation with settings sort:false,cap:false,beginning_packets:7,end_packets:7,cap_uncertainty:0,window_size:20 and no network state predictor
+[2023-01-13 13:03:23.858] [73279] (aimd_rate_control.cc:117): Using aimd rate control with back off factor 0.85
+[2023-01-13 13:03:23.858] [73279] (delay_based_bwe.cc:117): Initialized DelayBasedBwe with separate audio overuse detectionenabled:false,packet_threshold:10,time_threshold:1 s and alr limited backoff disabled
+[2023-01-13 13:03:23.858] [73279] (delay_based_bwe.cc:378): BWE Setting start bitrate to: 300 kbps
+[2023-01-13 13:03:23.858] [73279] (probe_controller.cc:280): Measured bitrate: 300000 Minimum to probe further: 1260000
+[2023-01-13 13:03:23.858] [73279] (bitrate_prober.cc:114): Probe cluster (bitrate:min bytes:min packets): (900000:1688:5)
+[2023-01-13 13:03:23.859] [73279] (bitrate_prober.cc:114): Probe cluster (bitrate:min bytes:min packets): (1800000:3375:5)
+[2023-01-13 13:03:23.859] [73279] (bitrate_allocator.cc:394): Current BWE 300000
+[2023-01-13 13:03:23.859] [72413] (audio_device_buffer.cc:180): SetRecordingSampleRate(44100)
+[2023-01-13 13:03:23.859] [72413] (audio_device_buffer.cc:200): SetRecordingChannels(2)
+[2023-01-13 13:03:23.859] [72413] (audio_device_impl.cc:814): output: 0
+[2023-01-13 13:03:23.859] [72413] (audio_device_impl.cc:864): StartRecording
+[2023-01-13 13:03:23.859] [72413] (audio_device_impl.cc:889): Recording
+[2023-01-13 13:03:23.859] [72413] (audio_device_buffer.cc:117): StartRecording
+[2023-01-13 13:03:23.860] [72413] (audio_device_impl.cc:871): output: 0
+[2023-01-13 13:03:23.860] [72413] (audio_device_impl.cc:448): MicrophoneIsInitialized
+[2023-01-13 13:03:23.860] [72413] (audio_mixer_manager_pulse_linux.cc:196): MicrophoneIsInitialized
+[2023-01-13 13:03:23.860] [72413] (audio_device_impl.cc:451): output: 1
+[2023-01-13 13:03:23.860] [72413] (audio_device_impl.cc:889): Recording
+[2023-01-13 13:03:23.860] [72413] (bitrate_prober.cc:72): Bandwidth probing enabled, set to inactive
+[2023-01-13 13:03:23.860] [72413] (aimd_rate_control.cc:117): Using aimd rate control with back off factor 0.85
+[2023-01-13 13:03:23.860] [72413] (remote_bitrate_estimator_single_stream.cc:72): RemoteBitrateEstimatorSingleStream: Instantiating.
+[2023-01-13 13:03:23.860] [72413] (remote_estimator_proxy.cc:50): Maximum interval between transport feedback RTCP messages (ms): 250
+[2023-01-13 13:03:23.860] [72413] (paced_sender.cc:186): ProcessThreadAttached 0x4766f40
+[2023-01-13 13:03:23.860] [72413] (delay_manager.cc:85): Delay manager config: quantile=0.97 forget_factor=0.9993 start_forget_weight=2 resample_interval_ms=0 max_history_ms=2000
+[2023-01-13 13:03:23.860] [72413] (decision_logic.cc:66): NetEq decision logic settings: estimate_dtx_delay=0 time_stretch_cn=0 target_level_window_ms=100
+[2023-01-13 13:03:23.860] [72413] (neteq_impl.cc:170): NetEq config: sample_rate_hz=16000, enable_post_decode_vad=true, max_packets_in_buffer=200, min_delay_ms=0, enable_fast_accelerate=false, enable_muted_state=false, enable_rtx_handling=false, extra_output_delay_ms=0
+[2023-01-13 13:03:23.860] [72413] (audio_coding_module.cc:226): Created
+[2023-01-13 13:03:23.860] [72413] (audio_send_stream.cc:162): AudioSendStream: 1
+[2023-01-13 13:03:23.860] [72413] (audio_send_stream.cc:229): AudioSendStream::ConfigureStream: {rtp: {ssrc: 1, extmap-allow-mixed: false, extensions: [], c_name: }, rtcp_report_interval_ms: 5000, send_transport: (Transport), min_bitrate_bps: -1, max_bitrate_bps: -1, has audio_network_adaptor_config: false, has_dscp: false, send_codec_spec: {nack_enabled: false, transport_cc_enabled: false, cng_payload_type: <unset>, red_payload_type: <unset>, payload_type: 0, format: {name: pcmu, clockrate_hz: 8000, num_channels: 1, parameters: {}}}}
+[2023-01-13 13:03:23.860] [72413] (call.cc:1168): UpdateAggregateNetworkState: aggregate_state change to up
+[2023-01-13 13:03:23.860] [72413] (audio_device_impl.cc:889): Recording
+[2023-01-13 13:03:23.860] [72413] (audio_device_impl.cc:448): MicrophoneIsInitialized
+[2023-01-13 13:03:23.860] [72413] (audio_mixer_manager_pulse_linux.cc:196): MicrophoneIsInitialized
+[2023-01-13 13:03:23.860] [72413] (audio_device_impl.cc:451): output: 1
+[2023-01-13 13:03:23.860] [72413] (audio_device_impl.cc:889): Recording
+[2023-01-13 13:03:23.860] [73283] (rtp_transport_controller_send.cc:599): Creating fallback congestion controller
+[2023-01-13 13:03:23.860] [73283] (alr_experiment.cc:79): Using ALR experiment settings: pacing factor: 1, max pacer queue length: 2875, ALR bandwidth usage percent: 80, ALR start budget level percent: 40, ALR end budget level percent: -60, ALR experiment group ID: 3
+[2023-01-13 13:03:23.860] [72413] (call.cc:1168): UpdateAggregateNetworkState: aggregate_state change to down
+[2023-01-13 13:03:23.860] [72413] (audio_send_stream.cc:178): ~AudioSendStream: 1
+[2023-01-13 13:03:23.860] [73283] (trendline_estimator.cc:188): Using Trendline filter for delay change estimation with settings sort:false,cap:false,beginning_packets:7,end_packets:7,cap_uncertainty:0,window_size:20 and no network state predictor
+[2023-01-13 13:03:23.860] [73279] (pacing_controller.cc:162): PacedSender paused.
+[2023-01-13 13:03:23.860] [73279] (control_handler.cc:78): Bitrate estimate state changed, BWE: 300 kbps.
+[2023-01-13 13:03:23.860] [73283] (trendline_estimator.cc:188): Using Trendline filter for delay change estimation with settings sort:false,cap:false,beginning_packets:7,end_packets:7,cap_uncertainty:0,window_size:20 and no network state predictor
+[2023-01-13 13:03:23.860] [73283] (aimd_rate_control.cc:117): Using aimd rate control with back off factor 0.85
+[2023-01-13 13:03:23.860] [73283] (delay_based_bwe.cc:117): Initialized DelayBasedBwe with separate audio overuse detectionenabled:false,packet_threshold:10,time_threshold:1 s and alr limited backoff disabled
+[2023-01-13 13:03:23.860] [73283] (delay_based_bwe.cc:378): BWE Setting start bitrate to: 300 kbps
+[2023-01-13 13:03:23.860] [73283] (probe_controller.cc:280): Measured bitrate: 300000 Minimum to probe further: 1260000
+[2023-01-13 13:03:23.860] [73283] (bitrate_prober.cc:114): Probe cluster (bitrate:min bytes:min packets): (900000:1688:5)
+[2023-01-13 13:03:23.860] [73283] (bitrate_prober.cc:114): Probe cluster (bitrate:min bytes:min packets): (1800000:3375:5)
+[2023-01-13 13:03:23.860] [73283] (bitrate_allocator.cc:394): Current BWE 300000
+[2023-01-13 13:03:23.860] [72413] (paced_sender.cc:186): ProcessThreadAttached 0x0
+[2023-01-13 13:03:23.860] [72413] (paced_sender.cc:186): ProcessThreadAttached 0x0
+[2023-01-13 13:03:23.882] [72418] (captured_audio_processor.cpp:86): Audio frames processed: 2493, noise canceller process time: 440 [ms]
+[2023-01-13 13:03:23.882] [72418] (captured_audio_processor.cpp:97): Audio frame: 2493, samples: 80, channels: 1, rate: 8000 [Hz], bytes: 2, level: 9
+[2023-01-13 13:03:23.902] [73286] (rtp_sender_audio.cc:317): First audio RTP packet sent to pacer
+[2023-01-13 13:03:24.168] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:03:24.284] [72413] (audio_processing_impl.cc:531): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 }, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 0, level: High }, transient_suppression: { enabled: 0 }, voice_detection: { enabled: 0 }, gain_controller1: { enabled: 1, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_level_minimum: 0, analog_level_maximum: 255 }, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, level_estimator: { vad_probability_attack: 1, type: Rms, adjacent_speech_frames_threshold: 1, initial_saturation_margin_db: 20, extra_saturation_margin_db: 2 }, gain_applier: { adjacent_speech_frames_threshold: 1, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50 }}}, residual_echo_detector: { enabled: 1 }, level_estimation: { enabled: 0 }}
+[2023-01-13 13:03:24.284] [72413] (audio_processing_impl.cc:531): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 }, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 0, level: High }, transient_suppression: { enabled: 0 }, voice_detection: { enabled: 0 }, gain_controller1: { enabled: 1, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_level_minimum: 0, analog_level_maximum: 255 }, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, level_estimator: { vad_probability_attack: 1, type: Rms, adjacent_speech_frames_threshold: 1, initial_saturation_margin_db: 20, extra_saturation_margin_db: 2 }, gain_applier: { adjacent_speech_frames_threshold: 1, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50 }}}, residual_echo_detector: { enabled: 1 }, level_estimation: { enabled: 0 }}
+[2023-01-13 13:03:24.284] [72413] (audio_processing_impl.cc:531): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 }, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 0, level: High }, transient_suppression: { enabled: 0 }, voice_detection: { enabled: 0 }, gain_controller1: { enabled: 1, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_level_minimum: 0, analog_level_maximum: 255 }, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, level_estimator: { vad_probability_attack: 1, type: Rms, adjacent_speech_frames_threshold: 1, initial_saturation_margin_db: 20, extra_saturation_margin_db: 2 }, gain_applier: { adjacent_speech_frames_threshold: 1, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50 }}}, residual_echo_detector: { enabled: 1 }, level_estimation: { enabled: 0 }}
+[2023-01-13 13:03:24.284] [72413] (captured_audio_processor.cpp:119): SetNoiseCancellation: 1
+[2023-01-13 13:03:24.284] [72413] (bitrate_prober.cc:72): Bandwidth probing enabled, set to inactive
+[2023-01-13 13:03:24.284] [72413] (aimd_rate_control.cc:117): Using aimd rate control with back off factor 0.85
+[2023-01-13 13:03:24.284] [72413] (remote_bitrate_estimator_single_stream.cc:72): RemoteBitrateEstimatorSingleStream: Instantiating.
+[2023-01-13 13:03:24.284] [72413] (remote_estimator_proxy.cc:50): Maximum interval between transport feedback RTCP messages (ms): 250
+[2023-01-13 13:03:24.284] [72413] (paced_sender.cc:186): ProcessThreadAttached 0x47dc780
+[2023-01-13 13:03:24.284] [72413] (delay_manager.cc:85): Delay manager config: quantile=0.97 forget_factor=0.9993 start_forget_weight=2 resample_interval_ms=0 max_history_ms=2000
+[2023-01-13 13:03:24.284] [72413] (decision_logic.cc:66): NetEq decision logic settings: estimate_dtx_delay=0 time_stretch_cn=0 target_level_window_ms=100
+[2023-01-13 13:03:24.284] [72413] (neteq_impl.cc:170): NetEq config: sample_rate_hz=16000, enable_post_decode_vad=true, max_packets_in_buffer=200, min_delay_ms=0, enable_fast_accelerate=false, enable_muted_state=true, enable_rtx_handling=false, extra_output_delay_ms=0
+[2023-01-13 13:03:24.284] [72413] (audio_receive_stream.cc:123): AudioReceiveStream: 1
+[2023-01-13 13:03:24.284] [72413] (rtp_demuxer.cc:144): Added sink = 1016500 for criteria {mid: <empty>, rsid: <empty>, ssrcs: [1, ], payload_types = []}
+[2023-01-13 13:03:24.284] [72413] (audio_receive_stream.cc:383): AudioReceiveStream::ConfigureStream: {rtp: {remote_ssrc: 1, local_ssrc: 0, transport_cc: off, nack: {rtp_history_ms: 0}, extensions: []}, rtcp_send_transport: (Transport)}
+[2023-01-13 13:03:24.284] [72413] (call.cc:1168): UpdateAggregateNetworkState: aggregate_state change to up
+[2023-01-13 13:03:24.284] [72413] (audio_device_impl.cc:858): Playing
+[2023-01-13 13:03:24.284] [72413] (audio_device_impl.cc:795): InitPlayout
+[2023-01-13 13:03:24.284] [72413] (audio_device_impl.cc:821): PlayoutIsInitialized
+[2023-01-13 13:03:24.284] [73288] (rtp_transport_controller_send.cc:599): Creating fallback congestion controller
+[2023-01-13 13:03:24.284] [73288] (alr_experiment.cc:79): Using ALR experiment settings: pacing factor: 1, max pacer queue length: 2875, ALR bandwidth usage percent: 80, ALR start budget level percent: 40, ALR end budget level percent: -60, ALR experiment group ID: 3
+[2023-01-13 13:03:24.284] [73288] (trendline_estimator.cc:188): Using Trendline filter for delay change estimation with settings sort:false,cap:false,beginning_packets:7,end_packets:7,cap_uncertainty:0,window_size:20 and no network state predictor
+[2023-01-13 13:03:24.284] [73288] (trendline_estimator.cc:188): Using Trendline filter for delay change estimation with settings sort:false,cap:false,beginning_packets:7,end_packets:7,cap_uncertainty:0,window_size:20 and no network state predictor
+[2023-01-13 13:03:24.284] [73288] (aimd_rate_control.cc:117): Using aimd rate control with back off factor 0.85
+[2023-01-13 13:03:24.284] [73288] (delay_based_bwe.cc:117): Initialized DelayBasedBwe with separate audio overuse detectionenabled:false,packet_threshold:10,time_threshold:1 s and alr limited backoff disabled
+[2023-01-13 13:03:24.284] [73288] (delay_based_bwe.cc:378): BWE Setting start bitrate to: 300 kbps
+[2023-01-13 13:03:24.284] [73288] (probe_controller.cc:280): Measured bitrate: 300000 Minimum to probe further: 1260000
+[2023-01-13 13:03:24.284] [73288] (bitrate_prober.cc:114): Probe cluster (bitrate:min bytes:min packets): (900000:1688:5)
+[2023-01-13 13:03:24.284] [73288] (bitrate_prober.cc:114): Probe cluster (bitrate:min bytes:min packets): (1800000:3375:5)
+[2023-01-13 13:03:24.284] [73288] (bitrate_allocator.cc:394): Current BWE 300000
+[2023-01-13 13:03:24.284] [72413] (audio_device_buffer.cc:186): SetPlayoutSampleRate(44100)
+[2023-01-13 13:03:24.284] [72413] (audio_device_buffer.cc:206): SetPlayoutChannels(2)
+[2023-01-13 13:03:24.284] [72413] (audio_device_impl.cc:801): output: 0
+[2023-01-13 13:03:24.284] [72413] (audio_device_impl.cc:833): StartPlayout
+[2023-01-13 13:03:24.284] [72413] (audio_device_impl.cc:858): Playing
+[2023-01-13 13:03:24.284] [72413] (audio_device_buffer.cc:98): StartPlayout
+[2023-01-13 13:03:24.285] [72413] (audio_device_impl.cc:840): output: 0
+[2023-01-13 13:03:24.285] [72413] (delay_manager.cc:85): Delay manager config: quantile=0.97 forget_factor=0.9993 start_forget_weight=2 resample_interval_ms=0 max_history_ms=2000
+[2023-01-13 13:03:24.285] [72413] (decision_logic.cc:66): NetEq decision logic settings: estimate_dtx_delay=0 time_stretch_cn=0 target_level_window_ms=100
+[2023-01-13 13:03:24.285] [72413] (neteq_impl.cc:170): NetEq config: sample_rate_hz=16000, enable_post_decode_vad=true, max_packets_in_buffer=200, min_delay_ms=0, enable_fast_accelerate=false, enable_muted_state=false, enable_rtx_handling=false, extra_output_delay_ms=0
+[2023-01-13 13:03:24.285] [72413] (audio_coding_module.cc:226): Created
+[2023-01-13 13:03:24.285] [72413] (audio_send_stream.cc:162): AudioSendStream: 1
+[2023-01-13 13:03:24.285] [72413] (audio_send_stream.cc:229): AudioSendStream::ConfigureStream: {rtp: {ssrc: 1, extmap-allow-mixed: false, extensions: [], c_name: }, rtcp_report_interval_ms: 5000, send_transport: (Transport), min_bitrate_bps: -1, max_bitrate_bps: -1, has audio_network_adaptor_config: false, has_dscp: false, send_codec_spec: {nack_enabled: false, transport_cc_enabled: false, cng_payload_type: <unset>, red_payload_type: <unset>, payload_type: 120, format: {name: opus, clockrate_hz: 48000, num_channels: 2, parameters: {stereo: 0}}}}
+[2023-01-13 13:03:24.285] [72413] (audio_encoder_opus.cc:677): Set Opus bitrate to 32000 bps.
+[2023-01-13 13:03:24.285] [72413] (audio_device_impl.cc:889): Recording
+[2023-01-13 13:03:24.285] [72413] (audio_send_stream.cc:229): AudioSendStream::ConfigureStream: {rtp: {ssrc: 1, extmap-allow-mixed: false, extensions: [], c_name: }, rtcp_report_interval_ms: 5000, send_transport: (Transport), min_bitrate_bps: -1, max_bitrate_bps: -1, has audio_network_adaptor_config: false, has_dscp: false, send_codec_spec: {nack_enabled: false, transport_cc_enabled: false, cng_payload_type: <unset>, red_payload_type: <unset>, payload_type: 120, format: {name: opus, clockrate_hz: 48000, num_channels: 1, parameters: {stereo: 0}}}}
+[2023-01-13 13:03:24.285] [72413] (audio_send_stream.cc:344): Failed to set up send codec state.
+[2023-01-13 13:03:24.285] [72413] (audio_device_impl.cc:448): MicrophoneIsInitialized
+[2023-01-13 13:03:24.285] [72413] (audio_mixer_manager_pulse_linux.cc:196): MicrophoneIsInitialized
+[2023-01-13 13:03:24.285] [72413] (audio_device_impl.cc:451): output: 1
+[2023-01-13 13:03:24.285] [72413] (audio_device_impl.cc:889): Recording
+[2023-01-13 13:03:24.285] [72413] (call.cc:1168): UpdateAggregateNetworkState: aggregate_state change to down
+[2023-01-13 13:03:24.285] [72413] (audio_send_stream.cc:178): ~AudioSendStream: 1
+[2023-01-13 13:03:24.285] [73283] (pacing_controller.cc:162): PacedSender paused.
+[2023-01-13 13:03:24.285] [73283] (control_handler.cc:78): Bitrate estimate state changed, BWE: 300 kbps.
+[2023-01-13 13:03:24.285] [72413] (paced_sender.cc:186): ProcessThreadAttached 0x0
+[2023-01-13 13:03:24.285] [72413] (paced_sender.cc:186): ProcessThreadAttached 0x0
+[2023-01-13 13:03:24.305] [72418] (noise_canceller.cpp:36): Creating noise canceller, channels: 1, rate 48000, duration: 10 [ms], buffer size: 960 [bytes]
+[2023-01-13 13:03:24.313] [73291] (rtp_sender_audio.cc:317): First audio RTP packet sent to pacer
+[2023-01-13 13:03:25.285] [73288] (probe_controller.cc:378): kWaitingForProbingResult: timeout
+[2023-01-13 13:03:27.172] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:03:27.320] [72413] (audio_processing_impl.cc:531): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 }, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 0, level: High }, transient_suppression: { enabled: 0 }, voice_detection: { enabled: 0 }, gain_controller1: { enabled: 1, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_level_minimum: 0, analog_level_maximum: 255 }, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, level_estimator: { vad_probability_attack: 1, type: Rms, adjacent_speech_frames_threshold: 1, initial_saturation_margin_db: 20, extra_saturation_margin_db: 2 }, gain_applier: { adjacent_speech_frames_threshold: 1, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50 }}}, residual_echo_detector: { enabled: 1 }, level_estimation: { enabled: 0 }}
+[2023-01-13 13:03:27.320] [72413] (audio_processing_impl.cc:531): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 }, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 0, level: High }, transient_suppression: { enabled: 0 }, voice_detection: { enabled: 0 }, gain_controller1: { enabled: 1, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_level_minimum: 0, analog_level_maximum: 255 }, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, level_estimator: { vad_probability_attack: 1, type: Rms, adjacent_speech_frames_threshold: 1, initial_saturation_margin_db: 20, extra_saturation_margin_db: 2 }, gain_applier: { adjacent_speech_frames_threshold: 1, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50 }}}, residual_echo_detector: { enabled: 1 }, level_estimation: { enabled: 0 }}
+[2023-01-13 13:03:27.320] [72413] (audio_processing_impl.cc:531): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 }, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 0, level: High }, transient_suppression: { enabled: 0 }, voice_detection: { enabled: 0 }, gain_controller1: { enabled: 1, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_level_minimum: 0, analog_level_maximum: 255 }, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, level_estimator: { vad_probability_attack: 1, type: Rms, adjacent_speech_frames_threshold: 1, initial_saturation_margin_db: 20, extra_saturation_margin_db: 2 }, gain_applier: { adjacent_speech_frames_threshold: 1, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50 }}}, residual_echo_detector: { enabled: 1 }, level_estimation: { enabled: 0 }}
+[2023-01-13 13:03:27.320] [72413] (captured_audio_processor.cpp:119): SetNoiseCancellation: 1
+[2023-01-13 13:03:27.320] [72413] (bitrate_prober.cc:72): Bandwidth probing enabled, set to inactive
+[2023-01-13 13:03:27.320] [72413] (aimd_rate_control.cc:117): Using aimd rate control with back off factor 0.85
+[2023-01-13 13:03:27.320] [72413] (remote_bitrate_estimator_single_stream.cc:72): RemoteBitrateEstimatorSingleStream: Instantiating.
+[2023-01-13 13:03:27.320] [72413] (remote_estimator_proxy.cc:50): Maximum interval between transport feedback RTCP messages (ms): 250
+[2023-01-13 13:03:27.320] [72413] (paced_sender.cc:186): ProcessThreadAttached 0x10458640
+[2023-01-13 13:03:27.320] [72413] (delay_manager.cc:85): Delay manager config: quantile=0.97 forget_factor=0.9993 start_forget_weight=2 resample_interval_ms=0 max_history_ms=2000
+[2023-01-13 13:03:27.320] [72413] (decision_logic.cc:66): NetEq decision logic settings: estimate_dtx_delay=0 time_stretch_cn=0 target_level_window_ms=100
+[2023-01-13 13:03:27.320] [72413] (neteq_impl.cc:170): NetEq config: sample_rate_hz=16000, enable_post_decode_vad=true, max_packets_in_buffer=200, min_delay_ms=0, enable_fast_accelerate=false, enable_muted_state=false, enable_rtx_handling=false, extra_output_delay_ms=0
+[2023-01-13 13:03:27.320] [72413] (audio_coding_module.cc:226): Created
+[2023-01-13 13:03:27.320] [72413] (audio_send_stream.cc:162): AudioSendStream: 1
+[2023-01-13 13:03:27.320] [72413] (audio_send_stream.cc:229): AudioSendStream::ConfigureStream: {rtp: {ssrc: 1, extmap-allow-mixed: false, extensions: [], c_name: }, rtcp_report_interval_ms: 5000, send_transport: (Transport), min_bitrate_bps: -1, max_bitrate_bps: -1, has audio_network_adaptor_config: false, has_dscp: false, send_codec_spec: {nack_enabled: false, transport_cc_enabled: false, cng_payload_type: <unset>, red_payload_type: <unset>, payload_type: 0, format: {name: pcmu, clockrate_hz: 8000, num_channels: 1, parameters: {}}}}
+[2023-01-13 13:03:27.320] [72413] (call.cc:1168): UpdateAggregateNetworkState: aggregate_state change to up
+[2023-01-13 13:03:27.320] [72413] (audio_device_impl.cc:889): Recording
+[2023-01-13 13:03:27.320] [72413] (audio_device_impl.cc:448): MicrophoneIsInitialized
+[2023-01-13 13:03:27.320] [72413] (audio_mixer_manager_pulse_linux.cc:196): MicrophoneIsInitialized
+[2023-01-13 13:03:27.320] [72413] (audio_device_impl.cc:451): output: 1
+[2023-01-13 13:03:27.320] [72413] (audio_device_impl.cc:889): Recording
+[2023-01-13 13:03:27.320] [73297] (rtp_transport_controller_send.cc:599): Creating fallback congestion controller
+[2023-01-13 13:03:27.320] [73297] (alr_experiment.cc:79): Using ALR experiment settings: pacing factor: 1, max pacer queue length: 2875, ALR bandwidth usage percent: 80, ALR start budget level percent: 40, ALR end budget level percent: -60, ALR experiment group ID: 3
+[2023-01-13 13:03:27.320] [72413] (audio_send_stream.cc:178): ~AudioSendStream: 1
+[2023-01-13 13:03:27.320] [73297] (trendline_estimator.cc:188): Using Trendline filter for delay change estimation with settings sort:false,cap:false,beginning_packets:7,end_packets:7,cap_uncertainty:0,window_size:20 and no network state predictor
+[2023-01-13 13:03:27.320] [73297] (trendline_estimator.cc:188): Using Trendline filter for delay change estimation with settings sort:false,cap:false,beginning_packets:7,end_packets:7,cap_uncertainty:0,window_size:20 and no network state predictor
+[2023-01-13 13:03:27.320] [73297] (aimd_rate_control.cc:117): Using aimd rate control with back off factor 0.85
+[2023-01-13 13:03:27.320] [73297] (delay_based_bwe.cc:117): Initialized DelayBasedBwe with separate audio overuse detectionenabled:false,packet_threshold:10,time_threshold:1 s and alr limited backoff disabled
+[2023-01-13 13:03:27.320] [73297] (delay_based_bwe.cc:378): BWE Setting start bitrate to: 300 kbps
+[2023-01-13 13:03:27.320] [73297] (probe_controller.cc:280): Measured bitrate: 300000 Minimum to probe further: 1260000
+[2023-01-13 13:03:27.320] [73297] (bitrate_prober.cc:114): Probe cluster (bitrate:min bytes:min packets): (900000:1688:5)
+[2023-01-13 13:03:27.320] [73297] (bitrate_prober.cc:114): Probe cluster (bitrate:min bytes:min packets): (1800000:3375:5)
+[2023-01-13 13:03:27.320] [73297] (bitrate_allocator.cc:394): Current BWE 300000
+[2023-01-13 13:03:27.320] [72413] (audio_device_impl.cc:847): StopPlayout
+[2023-01-13 13:03:27.320] [72413] (audio_device_buffer.cc:139): StopPlayout
+[2023-01-13 13:03:27.320] [72413] (audio_device_buffer.cc:145): total playout time: 3036
+[2023-01-13 13:03:27.320] [72413] (audio_device_impl.cc:851): output: 0
+[2023-01-13 13:03:27.320] [72413] (call.cc:1168): UpdateAggregateNetworkState: aggregate_state change to down
+[2023-01-13 13:03:27.320] [72413] (audio_receive_stream.cc:144): ~AudioReceiveStream: 1
+[2023-01-13 13:03:27.320] [72413] (rtp_demuxer.cc:240): Removed sink = 1016500 bindings
+[2023-01-13 13:03:27.320] [73288] (pacing_controller.cc:162): PacedSender paused.
+[2023-01-13 13:03:27.320] [73288] (control_handler.cc:78): Bitrate estimate state changed, BWE: 300 kbps.
+[2023-01-13 13:03:27.320] [72413] (paced_sender.cc:186): ProcessThreadAttached 0x0
+[2023-01-13 13:03:27.320] [72413] (paced_sender.cc:186): ProcessThreadAttached 0x0
+[2023-01-13 13:03:27.321] [72418] (noise_canceller.cpp:36): Creating noise canceller, channels: 1, rate 8000, duration: 10 [ms], buffer size: 160 [bytes]
+[2023-01-13 13:03:27.326] [73300] (rtp_sender_audio.cc:317): First audio RTP packet sent to pacer
+[2023-01-13 13:03:28.321] [73297] (probe_controller.cc:378): kWaitingForProbingResult: timeout
+[2023-01-13 13:03:30.175] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:03:33.175] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:03:33.887] [72418] (captured_audio_processor.cpp:86): Audio frames processed: 3491, noise canceller process time: 567 [ms]
+[2023-01-13 13:03:33.887] [72418] (captured_audio_processor.cpp:97): Audio frame: 3491, samples: 80, channels: 1, rate: 8000 [Hz], bytes: 2, level: 109
+[2023-01-13 13:03:36.178] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:03:36.356] [72413] (bitrate_prober.cc:72): Bandwidth probing enabled, set to inactive
+[2023-01-13 13:03:36.356] [72413] (aimd_rate_control.cc:117): Using aimd rate control with back off factor 0.85
+[2023-01-13 13:03:36.356] [72413] (remote_bitrate_estimator_single_stream.cc:72): RemoteBitrateEstimatorSingleStream: Instantiating.
+[2023-01-13 13:03:36.356] [72413] (remote_estimator_proxy.cc:50): Maximum interval between transport feedback RTCP messages (ms): 250
+[2023-01-13 13:03:36.356] [72413] (paced_sender.cc:186): ProcessThreadAttached 0x10b34380
+[2023-01-13 13:03:36.357] [72413] (delay_manager.cc:85): Delay manager config: quantile=0.97 forget_factor=0.9993 start_forget_weight=2 resample_interval_ms=0 max_history_ms=2000
+[2023-01-13 13:03:36.357] [72413] (decision_logic.cc:66): NetEq decision logic settings: estimate_dtx_delay=0 time_stretch_cn=0 target_level_window_ms=100
+[2023-01-13 13:03:36.357] [72413] (neteq_impl.cc:170): NetEq config: sample_rate_hz=16000, enable_post_decode_vad=true, max_packets_in_buffer=200, min_delay_ms=0, enable_fast_accelerate=false, enable_muted_state=false, enable_rtx_handling=false, extra_output_delay_ms=0
+[2023-01-13 13:03:36.357] [72413] (audio_coding_module.cc:226): Created
+[2023-01-13 13:03:36.357] [72413] (audio_send_stream.cc:162): AudioSendStream: 1
+[2023-01-13 13:03:36.357] [72413] (audio_send_stream.cc:229): AudioSendStream::ConfigureStream: {rtp: {ssrc: 1, extmap-allow-mixed: false, extensions: [], c_name: }, rtcp_report_interval_ms: 5000, send_transport: (Transport), min_bitrate_bps: -1, max_bitrate_bps: -1, has audio_network_adaptor_config: false, has_dscp: false, send_codec_spec: {nack_enabled: false, transport_cc_enabled: false, cng_payload_type: <unset>, red_payload_type: <unset>, payload_type: 0, format: {name: pcmu, clockrate_hz: 8000, num_channels: 1, parameters: {}}}}
+[2023-01-13 13:03:36.357] [72413] (call.cc:1168): UpdateAggregateNetworkState: aggregate_state change to up
+[2023-01-13 13:03:36.357] [72413] (audio_device_impl.cc:889): Recording
+[2023-01-13 13:03:36.357] [72413] (audio_device_impl.cc:448): MicrophoneIsInitialized
+[2023-01-13 13:03:36.357] [72413] (audio_mixer_manager_pulse_linux.cc:196): MicrophoneIsInitialized
+[2023-01-13 13:03:36.357] [72413] (audio_device_impl.cc:451): output: 1
+[2023-01-13 13:03:36.357] [72413] (audio_device_impl.cc:889): Recording
+[2023-01-13 13:03:36.357] [73304] (rtp_transport_controller_send.cc:599): Creating fallback congestion controller
+[2023-01-13 13:03:36.357] [72413] (call.cc:1168): UpdateAggregateNetworkState: aggregate_state change to down
+[2023-01-13 13:03:36.357] [72413] (audio_send_stream.cc:178): ~AudioSendStream: 1
+[2023-01-13 13:03:36.357] [73297] (pacing_controller.cc:162): PacedSender paused.
+[2023-01-13 13:03:36.357] [73297] (control_handler.cc:78): Bitrate estimate state changed, BWE: 300 kbps.
+[2023-01-13 13:03:36.357] [73304] (alr_experiment.cc:79): Using ALR experiment settings: pacing factor: 1, max pacer queue length: 2875, ALR bandwidth usage percent: 80, ALR start budget level percent: 40, ALR end budget level percent: -60, ALR experiment group ID: 3
+[2023-01-13 13:03:36.357] [73304] (trendline_estimator.cc:188): Using Trendline filter for delay change estimation with settings sort:false,cap:false,beginning_packets:7,end_packets:7,cap_uncertainty:0,window_size:20 and no network state predictor
+[2023-01-13 13:03:36.357] [73304] (trendline_estimator.cc:188): Using Trendline filter for delay change estimation with settings sort:false,cap:false,beginning_packets:7,end_packets:7,cap_uncertainty:0,window_size:20 and no network state predictor
+[2023-01-13 13:03:36.357] [73304] (aimd_rate_control.cc:117): Using aimd rate control with back off factor 0.85
+[2023-01-13 13:03:36.357] [73304] (delay_based_bwe.cc:117): Initialized DelayBasedBwe with separate audio overuse detectionenabled:false,packet_threshold:10,time_threshold:1 s and alr limited backoff disabled
+[2023-01-13 13:03:36.357] [73304] (delay_based_bwe.cc:378): BWE Setting start bitrate to: 300 kbps
+[2023-01-13 13:03:36.357] [73304] (probe_controller.cc:280): Measured bitrate: 300000 Minimum to probe further: 1260000
+[2023-01-13 13:03:36.357] [73304] (bitrate_prober.cc:114): Probe cluster (bitrate:min bytes:min packets): (900000:1688:5)
+[2023-01-13 13:03:36.357] [73304] (bitrate_prober.cc:114): Probe cluster (bitrate:min bytes:min packets): (1800000:3375:5)
+[2023-01-13 13:03:36.357] [73304] (bitrate_allocator.cc:394): Current BWE 300000
+[2023-01-13 13:03:36.357] [72413] (paced_sender.cc:186): ProcessThreadAttached 0x0
+[2023-01-13 13:03:36.357] [72413] (paced_sender.cc:186): ProcessThreadAttached 0x0
+[2023-01-13 13:03:36.357] [72413] (audio_device_impl.cc:889): Recording
+[2023-01-13 13:03:36.357] [72413] (audio_device_impl.cc:878): StopRecording
+[2023-01-13 13:03:36.357] [72413] (audio_device_buffer.cc:153): StopRecording
+[2023-01-13 13:03:36.357] [72413] (audio_device_buffer.cc:173): HISTOGRAM(WebRTC.Audio.RecordedOnlyZeros): 0
+[2023-01-13 13:03:36.357] [72413] (audio_device_buffer.cc:176): total recording time: 12498
+[2023-01-13 13:03:36.357] [72413] (audio_device_impl.cc:882): output: 0
+[2023-01-13 13:03:36.357] [72413] (audio_device_impl.cc:878): StopRecording
+[2023-01-13 13:03:36.357] [72413] (audio_device_impl.cc:882): output: 0
+[2023-01-13 13:03:36.357] [72413] (call.cc:1168): UpdateAggregateNetworkState: aggregate_state change to down
+[2023-01-13 13:03:36.357] [72413] (audio_send_stream.cc:178): ~AudioSendStream: 1
+[2023-01-13 13:03:36.357] [73304] (pacing_controller.cc:162): PacedSender paused.
+[2023-01-13 13:03:36.357] [73304] (control_handler.cc:78): Bitrate estimate state changed, BWE: 300 kbps.
+[2023-01-13 13:03:36.357] [72413] (paced_sender.cc:186): ProcessThreadAttached 0x0
+[2023-01-13 13:03:36.357] [72413] (paced_sender.cc:186): ProcessThreadAttached 0x0
+[2023-01-13 13:03:39.181] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:03:42.185] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:03:45.188] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:03:48.188] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:03:51.192] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:03:53.662] [72359] (discord.cpp:543): JS console: ["%c[Spotify]","WS Connecting"]
+[2023-01-13 13:03:54.195] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:03:54.818] [72359] (discord.cpp:543): JS console: ["%c[Spotify]","WS Disconnected. Next retry in 60000ms"]
+[2023-01-13 13:03:57.198] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:04:00.201] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:04:03.204] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:04:06.205] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:04:09.208] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:04:12.211] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:04:15.215] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:04:18.218] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:04:21.218] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:04:24.222] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:04:27.225] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:04:30.225] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:04:33.228] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:04:36.231] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:04:39.235] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:04:41.344] [72359] (discord.cpp:543): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/990614244884115497/998373331914981466"]
+[2023-01-13 13:04:42.235] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:04:43.203] [72359] (discord.cpp:543): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/990614244884115497/990614246066905146"]
+[2023-01-13 13:04:45.238] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:04:48.241] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:04:51.242] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:04:54.245] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:04:54.821] [72359] (discord.cpp:543): JS console: ["%c[Spotify]","WS Connecting"]
+[2023-01-13 13:04:55.204] [72359] (discord.cpp:543): JS console: ["%c[Spotify]","WS Disconnected. Next retry in 60000ms"]
+[2023-01-13 13:04:57.248] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:05:00.251] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:05:03.252] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:05:06.255] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:05:09.255] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:05:12.258] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:05:15.261] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:05:18.262] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:05:21.265] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:05:24.268] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:05:27.268] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:05:30.272] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:05:33.272] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:05:36.275] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:05:39.275] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:05:42.278] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:05:45.281] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:05:48.282] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:05:51.285] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:05:54.287] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:05:55.205] [72359] (discord.cpp:543): JS console: ["%c[Spotify]","WS Connecting"]
+[2023-01-13 13:05:55.583] [72359] (discord.cpp:543): JS console: ["%c[Spotify]","WS Disconnected. Next retry in 60000ms"]
+[2023-01-13 13:05:57.288] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:06:00.292] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:06:02.636] [72359] (discord.cpp:543): JS console: ["%c[MessageActionCreators]","Fetching messages for 684105993319219318 between undefined and undefined. jump={\"jumpType\":\"ANIMATED\"}"]
+[2023-01-13 13:06:02.889] [72359] (discord.cpp:543): JS console: ["%c[MessageActionCreators]","Fetched 50 messages for 684105993319219318 isBefore:false isAfter:false"]
+[2023-01-13 13:06:03.292] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:06:06.295] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:06:08.904] [72359] (discord.cpp:543): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/990614244884115497/990614246066905146"]
+[2023-01-13 13:06:09.298] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:06:11.012] [72359] (discord.cpp:543): JS console: ["%c[MessageActionCreators]","Fetching messages for 993243553482420264 between undefined and undefined. jump={\"isHighlight\":false,\"jumpType\":\"ANIMATED\"}"]
+[2023-01-13 13:06:11.091] [72359] (discord.cpp:543): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/990614244884115497/993243553482420264"]
+[2023-01-13 13:06:11.434] [72359] (discord.cpp:543): JS console: ["%c[MessageActionCreators]","Fetched 50 messages for 993243553482420264 isBefore:false isAfter:false"]
+[2023-01-13 13:06:11.657] [72359] (discord.cpp:543): JS console: ["%c[MessageActionCreators]","Fetching messages for 999687919629508668 between undefined and undefined. jump={\"isHighlight\":false,\"jumpType\":\"ANIMATED\"}"]
+[2023-01-13 13:06:11.709] [72359] (discord.cpp:543): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/990614244884115497/999687919629508668"]
+[2023-01-13 13:06:11.900] [72359] (discord.cpp:543): JS console: ["%c[MessageActionCreators]","Fetched 50 messages for 999687919629508668 isBefore:false isAfter:false"]
+[2023-01-13 13:06:12.298] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:06:15.205] [72359] (discord.cpp:543): JS console: ["%c[ClientStateStore]","Gap detected in read state versions","358642","358648","[object Object]"]
+[2023-01-13 13:06:15.302] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:06:18.305] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:06:21.308] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:06:24.311] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:06:25.676] [72359] (discord.cpp:543): JS console: ["%c[MessageActionCreators]","Fetching messages for 1063111357844692992 between undefined and undefined. jump={\"isHighlight\":false,\"jumpType\":\"ANIMATED\"}"]
+[2023-01-13 13:06:25.780] [72359] (discord.cpp:543): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/990614244884115497/1063111357844692992"]
+[2023-01-13 13:06:25.956] [72359] (discord.cpp:543): JS console: ["%c[MessageActionCreators]","Fetched 1 messages for 1063111357844692992 isBefore:false isAfter:false"]
+[2023-01-13 13:06:27.314] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:06:30.315] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:06:30.669] [72359] (discord.cpp:543): JS console: ["%c[MessageActionCreators]","Fetching messages for 1063111470172344431 between undefined and undefined. jump={\"isHighlight\":false,\"jumpType\":\"ANIMATED\"}"]
+[2023-01-13 13:06:30.723] [72359] (discord.cpp:543): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/990614244884115497/1063111470172344431"]
+[2023-01-13 13:06:30.901] [72359] (discord.cpp:543): JS console: ["%c[MessageActionCreators]","Fetched 26 messages for 1063111470172344431 isBefore:false isAfter:false"]
+[2023-01-13 13:06:33.318] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:06:34.143] [72359] (discord.cpp:543): JS console: ["%c[ClientStateStore]","Gap detected in read state versions","358648","358650","[object Object]"]
+[2023-01-13 13:06:36.318] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:06:39.322] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:06:42.325] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:06:44.055] [72359] (discord.cpp:543): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/990614244884115497/990614246066905146"]
+[2023-01-13 13:06:45.328] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:06:48.328] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:06:51.332] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:06:54.335] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:06:55.584] [72359] (discord.cpp:543): JS console: ["%c[Spotify]","WS Connecting"]
+[2023-01-13 13:06:55.993] [72359] (discord.cpp:543): JS console: ["%c[Spotify]","WS Disconnected. Next retry in 60000ms"]
+[2023-01-13 13:06:57.338] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:07:00.339] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:07:03.343] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:07:06.346] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:07:09.349] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:07:12.352] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:07:15.355] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:07:18.358] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:07:21.361] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:07:24.362] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:07:27.365] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:07:30.368] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:07:33.368] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:07:36.372] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:07:39.375] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:07:42.378] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:07:45.378] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:07:48.381] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:07:51.382] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:07:54.385] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:07:55.994] [72359] (discord.cpp:543): JS console: ["%c[Spotify]","WS Connecting"]
+[2023-01-13 13:07:56.425] [72359] (discord.cpp:543): JS console: ["%c[Spotify]","WS Disconnected. Next retry in 60000ms"]
+[2023-01-13 13:07:57.385] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:08:00.388] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:08:03.391] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:08:06.395] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:08:09.395] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:08:12.398] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:08:15.402] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:08:18.405] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:08:21.408] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:08:24.411] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:08:27.412] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:08:30.415] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:08:33.418] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:08:36.421] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:08:39.422] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:08:42.425] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:08:45.428] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:08:48.428] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:08:51.432] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:08:54.435] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:08:56.426] [72359] (discord.cpp:543): JS console: ["%c[Spotify]","WS Connecting"]
+[2023-01-13 13:08:56.808] [72359] (discord.cpp:543): JS console: ["%c[Spotify]","WS Disconnected. Next retry in 60000ms"]
+[2023-01-13 13:08:57.438] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:09:00.438] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:09:03.442] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:09:06.442] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:09:09.445] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:09:12.448] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:09:15.451] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:09:18.452] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:09:21.455] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:09:24.455] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:09:27.458] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:09:30.462] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:09:33.465] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:09:36.468] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:09:39.471] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:09:42.472] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:09:45.474] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:09:48.477] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:09:51.478] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:09:54.482] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:09:56.809] [72359] (discord.cpp:543): JS console: ["%c[Spotify]","WS Connecting"]
+[2023-01-13 13:09:57.395] [72359] (discord.cpp:543): JS console: ["%c[Spotify]","WS Disconnected. Next retry in 60000ms"]
+[2023-01-13 13:09:57.483] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:10:00.487] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:10:03.488] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:10:06.492] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:10:09.495] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:10:12.498] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:10:15.501] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:10:18.502] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:10:21.505] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:10:24.508] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:10:27.508] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:10:30.512] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:10:33.515] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:10:36.518] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:10:39.521] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:10:42.524] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:10:45.525] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:10:48.528] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:10:51.531] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:10:54.532] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:10:57.395] [72359] (discord.cpp:543): JS console: ["%c[Spotify]","WS Connecting"]
+[2023-01-13 13:10:57.535] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:10:57.965] [72359] (discord.cpp:543): JS console: ["%c[Spotify]","WS Disconnected. Next retry in 60000ms"]
+[2023-01-13 13:11:00.538] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:11:03.538] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:11:06.541] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:11:09.542] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:11:12.545] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:11:15.545] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:11:18.548] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:11:21.551] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:11:24.552] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:11:27.555] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:11:30.558] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:11:33.558] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:11:36.562] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:11:39.564] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:11:40.306] [72359] (discord.cpp:543): JS console: ["%c[ClientStateStore]","Gap detected in read state versions","358650","358652","[object Object]"]
+[2023-01-13 13:11:42.565] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:11:45.567] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:11:48.568] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:11:51.571] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:11:54.572] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:11:57.575] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:11:57.965] [72359] (discord.cpp:543): JS console: ["%c[Spotify]","WS Connecting"]
+[2023-01-13 13:11:58.401] [72359] (discord.cpp:543): JS console: ["%c[Spotify]","WS Disconnected. Next retry in 60000ms"]
+[2023-01-13 13:12:00.577] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:12:03.579] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:12:06.581] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:12:09.585] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:12:12.588] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:12:15.591] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:12:18.592] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:12:21.595] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:12:24.597] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:12:27.598] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:12:30.602] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:12:33.605] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:12:36.605] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:12:39.608] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:12:42.611] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:12:45.615] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:12:48.618] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:12:51.618] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:12:54.622] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:12:57.625] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:12:58.401] [72359] (discord.cpp:543): JS console: ["%c[Spotify]","WS Connecting"]
+[2023-01-13 13:12:58.873] [72359] (discord.cpp:543): JS console: ["%c[Spotify]","WS Disconnected. Next retry in 60000ms"]
+[2023-01-13 13:13:00.628] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:13:03.631] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:13:06.632] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:13:09.635] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:13:12.635] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:13:15.638] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:13:18.641] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:13:21.642] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:13:24.645] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:13:27.648] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:13:30.648] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:13:33.652] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:13:36.655] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:13:39.658] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:13:42.661] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:13:45.665] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:13:48.665] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:13:51.668] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:13:54.668] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:13:57.672] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:13:58.873] [72359] (discord.cpp:543): JS console: ["%c[Spotify]","WS Connecting"]
+[2023-01-13 13:13:59.264] [72359] (discord.cpp:543): JS console: ["%c[Spotify]","WS Disconnected. Next retry in 60000ms"]
+[2023-01-13 13:14:00.675] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:14:03.678] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:14:06.681] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:14:09.682] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:14:12.685] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:14:15.688] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:14:18.691] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:14:21.694] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:14:24.698] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:14:27.698] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:14:30.702] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:14:33.705] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:14:36.708] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:14:39.711] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:14:42.712] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:14:45.715] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:14:48.718] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:14:51.721] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:14:54.724] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:14:57.725] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:14:59.265] [72359] (discord.cpp:543): JS console: ["%c[Spotify]","WS Connecting"]
+[2023-01-13 13:14:59.690] [72359] (discord.cpp:543): JS console: ["%c[Spotify]","WS Disconnected. Next retry in 60000ms"]
+[2023-01-13 13:15:00.728] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:15:03.731] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:15:06.735] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:15:09.735] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:15:12.738] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:15:15.741] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:15:18.742] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:15:21.745] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:15:24.748] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:15:27.748] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:15:30.751] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:15:33.755] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:15:36.758] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:15:39.758] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:15:42.762] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:15:45.765] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:15:48.768] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:15:51.771] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:15:54.774] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:15:57.775] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:15:59.691] [72359] (discord.cpp:543): JS console: ["%c[Spotify]","WS Connecting"]
+[2023-01-13 13:16:00.108] [72359] (discord.cpp:543): JS console: ["%c[Spotify]","WS Disconnected. Next retry in 60000ms"]
+[2023-01-13 13:16:00.778] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:16:03.781] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:16:06.784] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:16:09.788] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:16:12.791] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:16:15.792] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:16:18.795] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:16:21.798] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:16:24.802] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:16:27.805] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:16:30.808] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:16:33.811] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:16:36.812] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:16:39.815] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:16:42.818] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:16:45.818] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:16:48.821] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:16:51.825] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:16:54.828] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:16:57.831] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:17:00.109] [72359] (discord.cpp:543): JS console: ["%c[Spotify]","WS Connecting"]
+[2023-01-13 13:17:00.473] [72359] (discord.cpp:543): JS console: ["%c[Spotify]","WS Disconnected. Next retry in 60000ms"]
+[2023-01-13 13:17:00.834] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:17:03.837] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:17:06.838] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:17:09.842] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:17:12.845] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:17:15.845] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:17:18.848] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:17:21.852] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:17:24.855] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:17:27.855] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:17:30.858] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:17:33.861] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:17:36.862] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:17:39.865] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:17:42.868] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:17:45.868] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:17:48.872] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:17:51.875] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:17:54.878] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:17:57.881] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:18:00.473] [72359] (discord.cpp:543): JS console: ["%c[Spotify]","WS Connecting"]
+[2023-01-13 13:18:00.882] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:18:00.897] [72359] (discord.cpp:543): JS console: ["%c[Spotify]","WS Disconnected. Next retry in 60000ms"]
+[2023-01-13 13:18:03.885] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:18:06.888] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:18:09.892] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:18:12.895] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:18:15.898] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:18:18.901] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:18:21.904] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:18:24.908] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:18:27.911] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:18:30.914] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:18:33.914] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:18:36.078] [72359] (discord.cpp:543): JS console: ["%c[ClientStateStore]","Gap detected in read state versions","358652","358654","[object Object]"]
+[2023-01-13 13:18:36.918] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:18:39.921] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:18:42.924] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:18:45.927] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:18:48.928] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:18:51.932] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:18:54.935] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:18:57.938] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:19:00.897] [72359] (discord.cpp:543): JS console: ["%c[Spotify]","WS Connecting"]
+[2023-01-13 13:19:00.940] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:19:01.361] [72359] (discord.cpp:543): JS console: ["%c[Spotify]","WS Disconnected. Next retry in 60000ms"]
+[2023-01-13 13:19:03.942] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:19:06.945] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:19:09.948] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:19:12.948] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:19:15.951] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:19:18.952] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:19:21.955] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:19:24.957] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:19:27.958] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:19:30.961] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:19:33.964] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:19:36.965] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:19:39.968] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:19:42.971] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:19:45.972] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:19:48.972] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:19:51.975] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:19:54.976] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:19:57.978] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:20:00.981] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:20:01.362] [72359] (discord.cpp:543): JS console: ["%c[Spotify]","WS Connecting"]
+[2023-01-13 13:20:01.826] [72359] (discord.cpp:543): JS console: ["%c[Spotify]","WS Disconnected. Next retry in 60000ms"]
+[2023-01-13 13:20:03.982] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:20:06.984] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:20:07.595] [72359] (discord.cpp:543): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /channels/990614244884115497/1063111470172344431"]
+[2023-01-13 13:20:09.987] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:20:10.939] [72359] (discord.cpp:543): JS console: ["%c[ClientStateStore]","Gap detected in read state versions","358654","358656","[object Object]"]
+[2023-01-13 13:20:12.988] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:20:15.989] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:20:18.992] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:20:21.996] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:20:24.999] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:20:28.002] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:20:31.005] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:20:34.008] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:20:37.011] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:20:40.012] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:20:43.015] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:20:46.018] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:20:49.018] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:20:52.021] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:20:55.022] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:20:58.025] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:21:01.028] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:21:01.827] [72359] (discord.cpp:543): JS console: ["%c[Spotify]","WS Connecting"]
+[2023-01-13 13:21:02.175] [72359] (discord.cpp:543): JS console: ["%c[Spotify]","WS Disconnected. Next retry in 60000ms"]
+[2023-01-13 13:21:04.031] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:21:07.032] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:21:10.035] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:21:13.035] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:21:16.038] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:21:19.041] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:21:22.044] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:21:25.045] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:21:28.048] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:21:31.048] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:21:34.051] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:21:37.052] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:21:40.055] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:21:43.055] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:21:46.058] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:21:49.061] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:21:52.065] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:21:55.067] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:21:58.068] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:22:01.071] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:22:02.177] [72359] (discord.cpp:543): JS console: ["%c[Spotify]","WS Connecting"]
+[2023-01-13 13:22:02.660] [72359] (discord.cpp:543): JS console: ["%c[Spotify]","WS Disconnected. Next retry in 60000ms"]
+[2023-01-13 13:22:04.073] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:22:07.075] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:22:10.078] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:22:13.081] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:22:16.085] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:22:19.085] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:22:22.088] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:22:25.088] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:22:28.091] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:22:31.094] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:22:34.095] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:22:37.098] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:22:40.098] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:22:43.101] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:22:46.102] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:22:49.105] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:22:52.108] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:22:55.111] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:22:58.115] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:23:01.115] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:23:02.661] [72359] (discord.cpp:543): JS console: ["%c[Spotify]","WS Connecting"]
+[2023-01-13 13:23:03.130] [72359] (discord.cpp:543): JS console: ["%c[Spotify]","WS Disconnected. Next retry in 60000ms"]
+[2023-01-13 13:23:04.118] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:23:07.121] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:23:10.124] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:23:13.128] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:23:16.128] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:23:19.131] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:23:22.132] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:23:25.135] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:23:28.135] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:23:31.138] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:23:34.138] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:23:37.141] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:23:40.145] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:23:43.148] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:23:46.148] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:23:49.151] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:23:52.155] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:23:55.155] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:23:58.158] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:24:01.161] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:24:03.131] [72359] (discord.cpp:543): JS console: ["%c[Spotify]","WS Connecting"]
+[2023-01-13 13:24:03.566] [72359] (discord.cpp:543): JS console: ["%c[Spotify]","WS Disconnected. Next retry in 60000ms"]
+[2023-01-13 13:24:04.162] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:24:07.165] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:24:10.168] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:24:13.168] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:24:16.171] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:24:19.175] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:24:22.175] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:24:25.178] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:24:28.178] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:24:31.181] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:24:34.182] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:24:37.185] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:24:40.187] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:24:43.188] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:24:46.191] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:24:49.192] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:24:52.195] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:24:55.198] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:24:58.201] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:25:01.202] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:25:03.567] [72359] (discord.cpp:543): JS console: ["%c[Spotify]","WS Connecting"]
+[2023-01-13 13:25:03.962] [72359] (discord.cpp:543): JS console: ["%c[Spotify]","WS Disconnected. Next retry in 60000ms"]
+[2023-01-13 13:25:04.205] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:25:07.208] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:25:10.211] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:25:13.214] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:25:16.215] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:25:19.218] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:25:22.221] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:25:25.224] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:25:28.228] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:25:31.231] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:25:34.234] [72414] (device_info_linux.cc:45): NumberOfDevices
+[2023-01-13 13:25:37.235] [72414] (device_info_linux.cc:45): NumberOfDevices

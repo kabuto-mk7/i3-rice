@@ -1,0 +1,23 @@
+{
+   "action": {
+      "default_title": "Click to toggle dark mode"
+   },
+   "background": {
+      "service_worker": "background.js"
+   },
+   "content_scripts": [ {
+      "js": [ "toggle.js" ],
+      "matches": [ "https://*.overleaf.com/project/*" ]
+   } ],
+   "description": "A dark mode for the online LaTeX editor Overleaf.",
+   "icons": {
+      "128": "img/icon128.png",
+      "48": "img/icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvci9hTyleB/n/oXMW1PwfsDIfLNn4IM56rbG0ofL7l+N1cQK5F321i2yrFaF+kn8ZiuEhMTQ8hSc3N+2/ZiX3jHRa/TYXc9EyRkqW7Uo+nro6gj7YZeNNdUf5phI/bfTKR3hwaP3JEmGN64vUMr+50jg4zKV43U6WKn/rrXJ/BDpzz7F58LxD5XtARtCosYQ4NxUOIJt0eZ4kpz3clGeF4mEVXDKbciUxHiEFrRg9uxlwdF4IH46151j85WOd+r4rnQSWC8i9BFUDSFrFPyjnXf5EFvBwSkkkfPmrnpfWQ2QnSq7NWtU+crEKcT6lDHZH/ZtK1zdFYH84HcTTRsXXwIDAQAB",
+   "manifest_version": 3,
+   "name": "Overleaf Dark Mode",
+   "permissions": [ "storage" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.4"
+}

@@ -1,0 +1,6 @@
+2023/01/13-13:00:46.332 11b5b Creating DB /home/kb/.config/google-chrome/Default/IndexedDB/https_mail.google.com_0.indexeddb.leveldb since it was missing.
+2023/01/13-13:00:46.336 11b5b Reusing MANIFEST /home/kb/.config/google-chrome/Default/IndexedDB/https_mail.google.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/01/13-13:03:46.102 11b5a Level-0 table #5: started
+2023/01/13-13:03:46.103 11b5a Level-0 table #5: 2900 bytes OK
+2023/01/13-13:03:46.104 11b5a Delete type=0 #3
+2023/01/13-13:03:46.104 11b5a Manual compaction at level-0 from (begin) .. (end); will stop at (end)

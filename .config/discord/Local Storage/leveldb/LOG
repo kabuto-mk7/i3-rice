@@ -1,0 +1,20 @@
+2023/01/13-12:56:45.701 11a3a Reusing MANIFEST /home/kb/.config/discord/Local Storage/leveldb/MANIFEST-000001
+2023/01/13-12:56:45.702 11a3a Recovering log #14
+2023/01/13-12:56:45.709 11a3a Level-0 table #17: started
+2023/01/13-12:56:45.724 11a3a Level-0 table #17: 1310973 bytes OK
+2023/01/13-12:56:45.726 11a3a Delete type=0 #14
+2023/01/13-12:56:45.726 11a4d Compacting 4@0 + 1@1 files
+2023/01/13-12:56:45.756 11a4d Generated table #19@0: 58 keys, 1394484 bytes
+2023/01/13-12:56:45.756 11a4d Compacted 4@0 + 1@1 files => 1394484 bytes
+2023/01/13-12:56:45.758 11a4d compacted to: files[ 0 1 1 0 0 0 0 ]
+2023/01/13-12:56:45.758 11a4d Delete type=2 #7
+2023/01/13-12:56:45.758 11a4d Delete type=2 #10
+2023/01/13-12:56:45.758 11a4d Delete type=2 #17
+2023/01/13-12:56:45.758 11a4d Delete type=2 #15
+2023/01/13-12:56:45.758 11a4d Delete type=2 #12
+2023/01/13-12:57:52.289 11a3a Level-0 table #21: started
+2023/01/13-12:57:52.304 11a3a Level-0 table #21: 1394996 bytes OK
+2023/01/13-12:57:52.304 11a3a Delete type=0 #18
+2023/01/13-12:58:52.287 11a3a Level-0 table #23: started
+2023/01/13-12:58:52.301 11a3a Level-0 table #23: 1366088 bytes OK
+2023/01/13-12:58:52.302 11a3a Delete type=0 #20

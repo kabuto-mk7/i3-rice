@@ -1,0 +1,15 @@
+2023/01/13-13:53:51.636 3 Reusing MANIFEST /home/kb/.config/google-chrome/Default/Session Storage/MANIFEST-000001
+2023/01/13-13:53:51.637 3 Recovering log #47
+2023/01/13-13:53:51.638 3 Reusing old log /home/kb/.config/google-chrome/Default/Session Storage/000047.log 
+2023/01/13-13:53:59.339 3 Level-0 table #51: started
+2023/01/13-13:53:59.342 3 Level-0 table #51: 16577 bytes OK
+2023/01/13-13:53:59.343 3 Delete type=0 #47
+2023/01/13-13:53:59.343 3 Compacting 4@0 + 1@1 files
+2023/01/13-13:53:59.346 3 Generated table #52@0: 2635 keys, 51053 bytes
+2023/01/13-13:53:59.346 3 Compacted 4@0 + 1@1 files => 51053 bytes
+2023/01/13-13:53:59.346 3 compacted to: files[ 0 1 1 0 0 0 0 ]
+2023/01/13-13:53:59.346 3 Delete type=2 #51
+2023/01/13-13:53:59.346 3 Delete type=2 #46
+2023/01/13-13:53:59.346 3 Delete type=2 #42
+2023/01/13-13:53:59.346 3 Delete type=2 #48
+2023/01/13-13:53:59.346 3 Delete type=2 #44

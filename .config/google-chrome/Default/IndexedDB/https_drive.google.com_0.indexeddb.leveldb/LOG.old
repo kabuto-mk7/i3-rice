@@ -1,0 +1,6 @@
+2023/01/13-10:19:01.763 491 Reusing MANIFEST /home/kb/.config/google-chrome/Default/IndexedDB/https_drive.google.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/01/13-10:19:01.763 491 Recovering log #9
+2023/01/13-10:19:01.763 491 Reusing old log /home/kb/.config/google-chrome/Default/IndexedDB/https_drive.google.com_0.indexeddb.leveldb/000009.log 
+2023/01/13-10:19:09.696 493 Level-0 table #16: started
+2023/01/13-10:19:09.716 493 Level-0 table #16: 1608303 bytes OK
+2023/01/13-10:19:09.717 493 Delete type=0 #9

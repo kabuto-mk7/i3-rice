@@ -1,0 +1,12 @@
+{
+  "BACKGROUND_COLOR": "#202225",
+  "IS_MAXIMIZED": false,
+  "IS_MINIMIZED": false,
+  "WINDOW_BOUNDS": {
+    "x": 1938,
+    "y": 18,
+    "width": 1044,
+    "height": 925
+  },
+  "SKIP_HOST_UPDATE": true
+}

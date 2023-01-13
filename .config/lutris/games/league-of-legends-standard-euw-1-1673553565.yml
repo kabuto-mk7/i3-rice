@@ -1,0 +1,98 @@
+game:
+  args: --locale=en_GB --launch-product=league_of_legends --launch-patchline=live
+  exe: /home/kb/Games/league-of-legends/drive_c/Riot Games/League of Legends/LeagueClient.exe
+  prefix: /home/kb/Games/league-of-legends
+game_slug: league-of-legends
+name: League of Legends
+requires: null
+script:
+  files:
+  - lol_installer: https://lol.secure.dyn.riotcdn.net/channels/public/x/installer/current/live.euw.exe
+  game:
+    args: --locale=$INPUT_LOCALE --launch-product=league_of_legends --launch-patchline=live
+    exe: $GAMEDIR/drive_c/Riot Games/League of Legends/LeagueClient.exe
+    prefix: $GAMEDIR
+  installer:
+  - input_menu:
+      id: LOCALE
+      options:
+      - {}
+      - {}
+      - {}
+      - {}
+      - {}
+      - {}
+      - {}
+      - {}
+      - {}
+      - {}
+      - {}
+      - {}
+      - {}
+      - {}
+      - {}
+      - {}
+      preselect: en_US
+  - task:
+      arch: win64
+      prefix: /home/kb/Games/league-of-legends
+      wine_path: /home/kb/.local/share/lutris/runners/wine/lutris-ge-lol-7.0-5-x86_64/bin/wine
+  - task:
+      arch: win64
+      args: /home/kb/.cache/lutris/installer/league-of-legends/lol_installer/live.euw.exe
+      env:
+        DXVK_LOG_LEVEL: none
+        DXVK_STATE_CACHE_PATH: /home/kb/Games/league-of-legends
+        STAGING_SHARED_MEMORY: '1'
+        WINE_LARGE_ADDRESS_AWARE: '1'
+        __GL_SHADER_DISK_CACHE: '1'
+        __GL_SHADER_DISK_CACHE_PATH: /home/kb/Games/league-of-legends
+      executable: /home/kb/Games/league-of-legends/drive_c/windows/explorer.exe
+      include_processes: explorer.exe
+      prefix: /home/kb/Games/league-of-legends
+      wine_path: /home/kb/.local/share/lutris/runners/wine/lutris-ge-lol-7.0-5-x86_64/bin/wine
+  - task:
+      arch: win64
+      prefix: /home/kb/Games/league-of-legends
+      wine_path: /home/kb/.local/share/lutris/runners/wine/lutris-ge-lol-7.0-5-x86_64/bin/wine
+  - task:
+      arch: win64
+      key: GrabFullScreen
+      path: HKEY_CURRENT_USER\Software\Wine\X11 Driver
+      prefix: /home/kb/Games/league-of-legends
+      value: Y
+      wine_path: /home/kb/.local/share/lutris/runners/wine/lutris-ge-lol-7.0-5-x86_64/bin/wine
+  - task:
+      arch: win64
+      key: background
+      path: HKEY_CURRENT_USER\Control Panel\Colors\
+      prefix: /home/kb/Games/league-of-legends
+      type: REG_SZ
+      value: 40 40 40
+      wine_path: /home/kb/.local/share/lutris/runners/wine/lutris-ge-lol-7.0-5-x86_64/bin/wine
+  system:
+    env:
+      DXVK_LOG_LEVEL: none
+      DXVK_STATE_CACHE_PATH: $GAMEDIR
+      STAGING_SHARED_MEMORY: 1
+      WINE_LARGE_ADDRESS_AWARE: 1
+      __GL_SHADER_DISK_CACHE: 1
+      __GL_SHADER_DISK_CACHE_PATH: $GAMEDIR
+  wine:
+    MouseWarpOverride: enable
+    version: lutris-ge-lol-7.0-5-x86_64
+slug: league-of-legends-standard-euw-1
+system:
+  env:
+    DXVK_LOG_LEVEL: none
+    DXVK_STATE_CACHE: '0'
+    STAGING_SHARED_MEMORY: '1'
+    WINE_LARGE_ADDRESS_AWARE: '1'
+    __GL_SHADER_DISK_CACHE: '1'
+    __GL_SHADER_DISK_CACHE_PATH: /home/kb/Games/league-of-legends
+variables: {}
+version: Standard (EUW)
+wine:
+  MouseWarpOverride: enable
+  version: lutris-ge-lol-7.0-5-x86_64
+year: 2009
